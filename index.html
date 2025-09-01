@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Resumes - Resúmenes de Juegos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🎲 GAME RESUMES 🎮</h1>
+            <p class="subtitle">Resúmenes de Juegos de Mesa y Rol</p>
+        </header>
+
+        <nav class="nav">
+            <button class="nav-btn active" data-category="all">TODOS</button>
+            <button class="nav-btn" data-category="board">MESA</button>
+            <button class="nav-btn" data-category="rpg">ROL</button>
+            <button class="nav-btn" data-category="card">CARTAS</button>
+        </nav>
+
+        <main class="main">
+            <div class="games-grid" id="gamesGrid">
+                <!-- Ejemplo: Warhammer 40k Combat Patrol -->
+                <div class="game-card" data-category="board">
+                    <div class="game-icon">⚔️</div>
+                    <h3 class="game-title">Warhammer 40K Combat Patrol</h3>
+                    <p class="game-description">Reglas resumidas para partidas rápidas de Warhammer 40,000</p>
+                    <div class="game-tags">
+                        <span class="tag">Estrategia</span>
+                        <span class="tag">Miniaturas</span>
+                    </div>
+                    <button class="game-btn" onclick="openGame('warhammer40k-combat-patrol')">VER RESUMEN</button>
+                </div>
+
+                <!-- Placeholder para más juegos -->
+                <div class="game-card" data-category="rpg">
+                    <div class="game-icon">🐉</div>
+                    <h3 class="game-title">D&D 5e Básico</h3>
+                    <p class="game-description">Reglas esenciales para empezar a jugar Dungeons & Dragons</p>
+                    <div class="game-tags">
+                        <span class="tag">Fantasía</span>
+                        <span class="tag">Narrativo</span>
+                    </div>
+                    <button class="game-btn" onclick="openGame('dnd5e-basic')">PRÓXIMAMENTE</button>
+                </div>
+
+                <div class="game-card" data-category="card">
+                    <div class="game-icon">🃏</div>
+                    <h3 class="game-title">Magic: The Gathering</h3>
+                    <p class="game-description">Reglas básicas y formatos populares</p>
+                    <div class="game-tags">
+                        <span class="tag">Cartas</span>
+                        <span class="tag">Estrategia</span>
+                    </div>
+                    <button class="game-btn" onclick="openGame('mtg-basic')">PRÓXIMAMENTE</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Game Resumes | Hecho con ❤️ para la comunidad gamer</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
