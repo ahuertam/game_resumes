@@ -37,6 +37,227 @@
             </div>
 
             <div class="content-section">
+                <h2>🔄 FASES DEL JUEGO</h2>
+                <div class="phase-list">
+                    <div class="phase">
+                        <h3>1️⃣ FASE DE COMANDO</h3>
+                        <ul>
+                            <li>🎯 Ganas 1 Punto de Comando (PC)</li>
+                            <li>🧠 Activas habilidades de inicio de turno</li>
+                            <li>😱 Realizas tests de Acobardamiento</li>
+                            <li>🎲 Tiras por objetivos secundarios</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>2️⃣ FASE DE MOVIMIENTO</h3>
+                        <ul>
+                            <li>🏃 Mueves todas tus unidades</li>
+                            <li>🚁 Realizas movimientos de Avance</li>
+                            <li>🌀 Activas habilidades de movimiento</li>
+                            <li>📍 Embarcas/Desembarcas de transportes</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>3️⃣ FASE DE DISPARO</h3>
+                        <ul>
+                            <li>🎯 Seleccionas unidad que dispara</li>
+                            <li>👁️ Eliges objetivos válidos</li>
+                            <li>🎲 Realizas tiradas para impactar</li>
+                            <li>💥 Resuelves heridas y salvaciones</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>4️⃣ FASE DE CARGA</h3>
+                        <ul>
+                            <li>⚡ Declaras cargas</li>
+                            <li>🎲 Tiras 2D6 para distancia</li>
+                            <li>🏃 Mueves hacia el enemigo</li>
+                            <li>⚔️ Realizas ataques heroicos</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>5️⃣ FASE DE COMBATE</h3>
+                        <ul>
+                            <li>🥊 Alternar activaciones de unidades</li>
+                            <li>⚔️ Resolver ataques cuerpo a cuerpo</li>
+                            <li>🏃 Movimientos de consolidación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🏃 REGLAS DE MOVIMIENTO</h2>
+                <div class="movement-rules">
+                    <div class="movement-type">
+                        <h3>📏 Movimiento Normal</h3>
+                        <p><strong>Distancia:</strong> Valor de Movimiento (M) de la unidad</p>
+                        <p><strong>Restricciones:</strong> No puede atravesar unidades enemigas</p>
+                    </div>
+                    <div class="movement-type">
+                        <h3>🚁 Movimiento de Avance</h3>
+                        <p><strong>Distancia:</strong> M + 1D6"</p>
+                        <p><strong>Penalización:</strong> No puede disparar (excepto Asalto)</p>
+                        <p><strong>Beneficio:</strong> Mayor alcance de movimiento</p>
+                    </div>
+                    <div class="movement-type">
+                        <h3>🌊 Movimiento de Retroceso</h3>
+                        <p><strong>Cuándo:</strong> Al inicio del movimiento si está en combate</p>
+                        <p><strong>Distancia:</strong> Hasta M", alejándose del enemigo</p>
+                        <p><strong>Penalización:</strong> No puede disparar ni cargar</p>
+                    </div>
+                    <div class="movement-type">
+                        <h3>🪂 Movimiento de Permanencia</h3>
+                        <p><strong>Efecto:</strong> La unidad no se mueve</p>
+                        <p><strong>Beneficio:</strong> +1 para impactar al disparar</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🎯 TABLA DE TIRADAS PARA IMPACTAR</h2>
+                <div class="hit-table">
+                    <div class="table-header">
+                        <div class="col">Habilidad de Armas (HA)</div>
+                        <div class="col">Tirada Necesaria</div>
+                        <div class="col">Probabilidad</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col">2+</div>
+                        <div class="col">2, 3, 4, 5, 6</div>
+                        <div class="col">83.3%</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col">3+</div>
+                        <div class="col">3, 4, 5, 6</div>
+                        <div class="col">66.7%</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col">4+</div>
+                        <div class="col">4, 5, 6</div>
+                        <div class="col">50%</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col">5+</div>
+                        <div class="col">5, 6</div>
+                        <div class="col">33.3%</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col">6+</div>
+                        <div class="col">6</div>
+                        <div class="col">16.7%</div>
+                    </div>
+                </div>
+                <div class="hit-modifiers">
+                    <h3>🎯 Modificadores Comunes</h3>
+                    <ul>
+                        <li><strong>+1:</strong> Unidad no se movió (Permanencia)</li>
+                        <li><strong>-1:</strong> Objetivo en cobertura</li>
+                        <li><strong>-1:</strong> Disparador se movió y disparó arma Pesada</li>
+                        <li><strong>-1:</strong> Objetivo a más de la mitad del alcance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🏠 COBERTURA, TERRENO Y VISIBILIDAD</h2>
+                <div class="terrain-rules">
+                    <div class="terrain-type">
+                        <h3>👁️ LÍNEA DE VISIÓN</h3>
+                        <ul>
+                            <li>📏 Se traza desde cualquier punto del modelo disparador</li>
+                            <li>🎯 Hasta cualquier punto del modelo objetivo</li>
+                            <li>🚫 Bloqueada por terreno opaco y otras unidades</li>
+                            <li>✅ Modelos de la misma unidad no bloquean</li>
+                        </ul>
+                    </div>
+                    <div class="terrain-type">
+                        <h3>🛡️ COBERTURA</h3>
+                        <div class="cover-types">
+                            <div class="cover-rule">
+                                <h4>Cobertura Ligera</h4>
+                                <p><strong>Efecto:</strong> +1 a salvación</p>
+                                <p><strong>Fuente:</strong> Terreno de área, ruinas menores</p>
+                            </div>
+                            <div class="cover-rule">
+                                <h4>Cobertura Pesada</h4>
+                                <p><strong>Efecto:</strong> +2 a salvación</p>
+                                <p><strong>Fuente:</strong> Bunkers, fortificaciones</p>
+                            </div>
+                        </div>
+                        <p><strong>⚠️ Importante:</strong> Cobertura no se aplica contra ataques cuerpo a cuerpo</p>
+                    </div>
+                    <div class="terrain-type">
+                        <h3>🌲 TIPOS DE TERRENO</h3>
+                        <div class="terrain-grid">
+                            <div class="terrain-card">
+                                <h4>🏚️ Ruinas</h4>
+                                <p>Cobertura ligera, movimiento normal</p>
+                            </div>
+                            <div class="terrain-card">
+                                <h4>🌳 Bosque Denso</h4>
+                                <p>Bloquea línea de visión, movimiento difícil</p>
+                            </div>
+                            <div class="terrain-card">
+                                <h4>🏔️ Terreno Impassable</h4>
+                                <p>No se puede mover a través</p>
+                            </div>
+                            <div class="terrain-card">
+                                <h4>💧 Terreno Difícil</h4>
+                                <p>-2" al movimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>😱 REGLAS DE ACOBARDAMIENTO</h2>
+                <div class="battleshock-rules">
+                    <div class="battleshock-trigger">
+                        <h3>🎲 CUÁNDO REALIZAR TEST</h3>
+                        <ul>
+                            <li>📉 Al inicio de tu fase de comando</li>
+                            <li>💀 Si la unidad está por debajo de la Fuerza inicial</li>
+                            <li>⚠️ Si la unidad perdió modelos en el turno anterior</li>
+                        </ul>
+                    </div>
+                    <div class="battleshock-process">
+                        <h3>⚡ CÓMO REALIZAR EL TEST</h3>
+                        <ol>
+                            <li>🎲 Tira 2D6</li>
+                            <li>➕ Suma el Liderazgo (Ld) de la unidad</li>
+                            <li>📊 Compara con el número de modelos perdidos</li>
+                            <li>❌ Si fallas: la unidad sufre Acobardamiento</li>
+                        </ol>
+                    </div>
+                    <div class="battleshock-effects">
+                        <h3>💥 EFECTOS DEL ACOBARDAMIENTO</h3>
+                        <div class="effect-list">
+                            <div class="effect">
+                                <h4>🚫 Restricciones</h4>
+                                <ul>
+                                    <li>No puede usar Estratagemas</li>
+                                    <li>No puede realizar acciones</li>
+                                    <li>-1 a todas las tiradas de ataque</li>
+                                </ul>
+                            </div>
+                            <div class="effect">
+                                <h4>🔄 Recuperación</h4>
+                                <p>Se recupera automáticamente al inicio del siguiente turno</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="battleshock-example">
+                        <h3>📝 EJEMPLO</h3>
+                        <p><strong>Situación:</strong> Escuadra de Marines (Ld 7) perdió 3 modelos</p>
+                        <p><strong>Test:</strong> 2D6 + 7 vs 3</p>
+                        <p><strong>Resultado:</strong> Si sacas 6 o menos en total, sufres Acobardamiento</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
                 <h2>🚀 MARINES ESPACIALES</h2>
                 <div class="faction-content">
                     <h3>Señor de la Guerra: Capitán Octavio</h3>

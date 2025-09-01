@@ -74,6 +74,296 @@
     opacity: 0.9;
 }
 
+/* Estilos para fases del juego */
+.phase-list {
+    display: grid;
+    gap: 20px;
+}
+
+.phase {
+    background: #2c3e50;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+.phase h3 {
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #f39c12;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.phase ul {
+    list-style: none;
+    padding: 0;
+}
+
+.phase li {
+    font-size: 9px;
+    margin-bottom: 8px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid #27ae60;
+}
+
+/* Estilos para reglas de movimiento */
+.movement-rules {
+    display: grid;
+    gap: 15px;
+}
+
+.movement-type {
+    background: #2c3e50;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.movement-type h3 {
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: #3498db;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.movement-type p {
+    font-size: 8px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.movement-type strong {
+    color: #e74c3c;
+}
+
+/* Estilos para tabla de impactar */
+.hit-table {
+    background: #2c3e50;
+    border: 2px solid #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #e74c3c;
+    border-bottom: 2px solid #ffffff;
+}
+
+.table-header .col {
+    padding: 10px;
+    font-size: 9px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 1px solid #ffffff;
+}
+
+.table-header .col:last-child {
+    border-right: none;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid #ffffff;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-row .col {
+    padding: 8px;
+    font-size: 8px;
+    text-align: center;
+    border-right: 1px solid #ffffff;
+}
+
+.table-row .col:last-child {
+    border-right: none;
+}
+
+.hit-modifiers {
+    background: #2c3e50;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.hit-modifiers h3 {
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.hit-modifiers ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hit-modifiers li {
+    font-size: 8px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para terreno */
+.terrain-rules {
+    display: grid;
+    gap: 20px;
+}
+
+.terrain-type {
+    background: #2c3e50;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+.terrain-type h3 {
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #27ae60;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.terrain-type ul {
+    list-style: none;
+    padding: 0;
+}
+
+.terrain-type li {
+    font-size: 8px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid #27ae60;
+}
+
+.cover-types {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.cover-rule {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+
+.cover-rule h4 {
+    font-size: 9px;
+    margin-bottom: 5px;
+    color: #f39c12;
+}
+
+.cover-rule p {
+    font-size: 7px;
+    margin-bottom: 3px;
+}
+
+.terrain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.terrain-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+
+.terrain-card h4 {
+    font-size: 9px;
+    margin-bottom: 5px;
+    color: #3498db;
+}
+
+.terrain-card p {
+    font-size: 7px;
+}
+
+/* Estilos para acobardamiento */
+.battleshock-rules {
+    display: grid;
+    gap: 20px;
+}
+
+.battleshock-trigger,
+.battleshock-process,
+.battleshock-effects,
+.battleshock-example {
+    background: #2c3e50;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.battleshock-trigger h3,
+.battleshock-process h3,
+.battleshock-effects h3,
+.battleshock-example h3 {
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: #e74c3c;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.battleshock-process ol {
+    padding-left: 20px;
+}
+
+.battleshock-process li {
+    font-size: 8px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.effect-list {
+    display: grid;
+    gap: 10px;
+}
+
+.effect {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+
+.effect h4 {
+    font-size: 9px;
+    margin-bottom: 8px;
+    color: #f39c12;
+}
+
+.effect ul {
+    list-style: none;
+    padding: 0;
+}
+
+.effect li {
+    font-size: 7px;
+    margin-bottom: 3px;
+    padding: 3px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.battleshock-example p {
+    font-size: 8px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.battleshock-example strong {
+    color: #f39c12;
+}
+
 .faction-content h3 {
     font-size: 12px;
     margin-bottom: 15px;
@@ -150,5 +440,20 @@
     
     .content-section {
         padding: 20px;
+    }
+    
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .table-header .col,
+    .table-row .col {
+        border-right: none;
+        border-bottom: 1px solid #ffffff;
+    }
+    
+    .terrain-grid {
+        grid-template-columns: 1fr;
     }
 }
