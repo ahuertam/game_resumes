@@ -5,65 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Resumes - Resúmenes de Juegos</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1 class="title">🎲 GAME RESUMES 🎮</h1>
-            <p class="subtitle">Resúmenes de Juegos de Mesa y Rol</p>
+        <header class="main-header">
+            <h1>⚔️ GAME MASTER'S VAULT ⚔️</h1>
+            <p>🏰 Compendio de reglas para aventureros 🏰</p>
         </header>
 
-        <nav class="nav">
-            <button class="nav-btn active" data-category="all">TODOS</button>
-            <button class="nav-btn" data-category="board">MESA</button>
-            <button class="nav-btn" data-category="rpg">ROL</button>
-            <button class="nav-btn" data-category="card">CARTAS</button>
-        </nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar juegos..." class="search-input">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">TODOS</button>
+                <button class="filter-btn" data-filter="wargames">WARGAMES</button>
+                <button class="filter-btn" data-filter="rpg">ROL</button>
+                <button class="filter-btn" data-filter="board">MESA</button>
+            </div>
+        </div>
 
-        <main class="main">
-            <div class="games-grid" id="gamesGrid">
-                <!-- Ejemplo: Warhammer 40k Combat Patrol -->
-                <div class="game-card" data-category="board">
-                    <div class="game-icon">⚔️</div>
-                    <h3 class="game-title">Warhammer 40K Combat Patrol</h3>
-                    <p class="game-description">Reglas resumidas para partidas rápidas de Warhammer 40,000</p>
-                    <div class="game-tags">
-                        <span class="tag">Estrategia</span>
-                        <span class="tag">Miniaturas</span>
-                    </div>
-                    <button class="game-btn" onclick="openGame('warhammer40k-combat-patrol')">VER RESUMEN</button>
-                </div>
-
-                <!-- Placeholder para más juegos -->
-                <div class="game-card" data-category="rpg">
-                    <div class="game-icon">🐉</div>
-                    <h3 class="game-title">D&D 5e Básico</h3>
-                    <p class="game-description">Reglas esenciales para empezar a jugar Dungeons & Dragons</p>
-                    <div class="game-tags">
-                        <span class="tag">Fantasía</span>
-                        <span class="tag">Narrativo</span>
-                    </div>
-                    <button class="game-btn" onclick="openGame('dnd5e-basic')">PRÓXIMAMENTE</button>
-                </div>
-
-                <div class="game-card" data-category="card">
-                    <div class="game-icon">🃏</div>
-                    <h3 class="game-title">Magic: The Gathering</h3>
-                    <p class="game-description">Reglas básicas y formatos populares</p>
-                    <div class="game-tags">
-                        <span class="tag">Cartas</span>
-                        <span class="tag">Estrategia</span>
-                    </div>
-                    <button class="game-btn" onclick="openGame('mtg-basic')">PRÓXIMAMENTE</button>
+        <div class="games-grid" id="gamesGrid">
+            <div class="game-card" data-category="wargames" data-game="warhammer40k-combat-patrol">
+                <div class="game-icon">⚔️</div>
+                <h3>Warhammer 40K Combat Patrol</h3>
+                <p>Reglas rápidas para partidas de Combat Patrol con Tyranids y Space Marines</p>
+                <div class="game-tags">
+                    <span class="tag">Wargames</span>
+                    <span class="tag">Estrategia</span>
                 </div>
             </div>
-        </main>
 
-        <footer class="footer">
-            <p>© 2025 Game Resumes | Hecho con ❤️ para la comunidad gamer</p>
+            <div class="game-card" data-category="wargames" data-game="warhammer-fantasy-8th">
+                <div class="game-icon">🏰</div>
+                <h3>Warhammer Fantasy 8ª Ed.</h3>
+                <p>Resumen completo de reglas con Imperio, Guerreros del Caos y Demonios del Caos</p>
+                <div class="game-tags">
+                    <span class="tag">Wargames</span>
+                    <span class="tag">Fantasy</span>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="board" data-game="catan">
+                <div class="game-icon">🏝️</div>
+                <h3>Catán</h3>
+                <p>Resumen completo de reglas, recursos, construcción y estrategias para colonizar la isla</p>
+                <div class="game-tags">
+                    <span class="tag">Mesa</span>
+                    <span class="tag">Estrategia</span>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="board" data-game="survive-the-island">
+                <div class="game-icon">🌋</div>
+                <h3>Survive The Island</h3>
+                <p>Escapa de una isla que se hunde evitando criaturas ancestrales. Edición Revisada 2024 con Kaijus</p>
+                <div class="game-tags">
+                    <span class="tag">Mesa</span>
+                    <span class="tag">Supervivencia</span>
+                </div>
+            </div>
+            <div class="game-card" data-category="wargames" data-game="warmaster-revolution">
+                <div class="game-icon">⚔️</div>
+                <h3>Warmaster Revolution</h3>
+                <p>Batallas épicas a gran escala</p>
+                <div class="game-tags">
+                    <span class="tag">Wargames</span>
+                    <span class="tag">Estrategia</span>
+                </div>
+            </div>
+            
+            <div class="game-card" data-category="rpg" data-game="aventuras-marca-este">
+                <div class="game-icon">🏰</div>
+                <h3>Aventuras en la Marca del Este</h3>
+                <p>Juego de rol de fantasía heroica</p>
+                <div class="game-tags">
+                    <span class="tag">ROL</span>
+                    <span class="tag">Fantasía</span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="main-footer">
+            <p>Hecho con ❤️ para la comunidad gamer</p>
         </footer>
     </div>
 

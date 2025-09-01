@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survive The Island - Game Resumes</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="game-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <a href="../index.html" class="back-btn">← VOLVER</a>
+            <h1 class="game-title">🌋 SURVIVE THE ISLAND</h1>
+        </header>
+
+        <main class="game-content">
+            <div class="content-section">
+                <h2>🎯 INFORMACIÓN GENERAL</h2>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>👥 Jugadores</h3>
+                        <p>2-5 jugadores</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>⏱️ Duración</h3>
+                        <p>45 minutos</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🎂 Edad</h3>
+                        <p>8+ años</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🎲 Complejidad</h3>
+                        <p>1.46/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🏝️ COMPONENTES</h2>
+                <div class="hit-modifiers">
+                    <div class="modifier">
+                        <span class="modifier-name">🗺️ Tablero</span>
+                        <span class="modifier-value">1 tablero de juego</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">🏞️ Fichas de Terreno</span>
+                        <span class="modifier-value">40 fichas hexagonales</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">👥 Supervivientes</span>
+                        <span class="modifier-value">50 fichas de madera</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">🐉 Criaturas</span>
+                        <span class="modifier-value">13 fichas (serpientes, tiburones, kaijus)</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">🚤 Balsas</span>
+                        <span class="modifier-value">12 balsas de madera</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">🎲 Dado</span>
+                        <span class="modifier-value">1 dado de criatura</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">📋 Ayudas</span>
+                        <span class="modifier-value">5 ayudas de juego</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🎯 OBJETIVO DEL JUEGO</h2>
+                <div class="rule-card">
+                    <p>Escapar de una isla que se hunde llevando a tus exploradores a tierra firme con la mayor cantidad de tesoros posible. Los volcanes han entrado en erupción y criaturas ancestrales acechan. ¡Debes evacuar antes de que la isla desaparezca bajo las aguas!</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🏗️ PREPARACIÓN</h2>
+                <div class="phase-list">
+                    <div class="phase">
+                        <h3>1️⃣ CONFIGURAR LA ISLA</h3>
+                        <ul>
+                            <li>🗺️ Despliega el tablero en el centro</li>
+                            <li>🔀 Baraja las fichas de terreno boca abajo</li>
+                            <li>🏝️ Colócalas al azar boca arriba formando la isla</li>
+                            <li>🐍 Sitúa las serpientes marinas en sus casillas iniciales</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>2️⃣ PREPARAR JUGADORES</h3>
+                        <ul>
+                            <li>👥 Cada jugador recibe 10 supervivientes y 2 balsas</li>
+                            <li>🎮 En partidas de 2 jugadores: cada uno elige 2 colores y recibe 4 balsas</li>
+                            <li>🧠 Memoriza el valor de tus supervivientes (1-6 puntos)</li>
+                            <li>🏝️ Coloca supervivientes en fichas de terreno vacías</li>
+                            <li>🚤 Coloca balsas en casillas de agua adyacentes a la isla</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🔄 SECUENCIA DE TURNO</h2>
+                <div class="phase-list">
+                    <div class="phase">
+                        <h3>1️⃣ FASE DE ACCIÓN</h3>
+                        <p><strong>3 puntos de movimiento para:</strong></p>
+                        <ul>
+                            <li>🚶 <strong>Supervivientes a pie:</strong> Caminar por terreno, balsas o tierra firme</li>
+                            <li>🏊 <strong>Supervivientes nadando:</strong> Atravesar agua (1 vez por turno cada uno)</li>
+                            <li>🚤 <strong>Mover balsas:</strong> Si tienes mayoría o están vacías</li>
+                            <li>🎴 <strong>Usar capacidades:</strong> Fichas especiales reveladas</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>2️⃣ FASE DE HUNDIMIENTO</h3>
+                        <ul>
+                            <li>🏖️ <strong>Orden de retirada:</strong> Primero playa, luego jungla, finalmente montaña</li>
+                            <li>💧 Los supervivientes/criaturas en la ficha caen al agua</li>
+                            <li>🔍 <strong>Revisar reverso:</strong></li>
+                            <li>⚡ Si es un efecto: se resuelve inmediatamente</li>
+                            <li>🎴 Si es una capacidad: la guardas para usar después</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>3️⃣ FASE DE CRIATURAS</h3>
+                        <ul>
+                            <li>🎲 Lanza el dado de criatura</li>
+                            <li>🐉 Mueve la criatura indicada (si está en el tablero)</li>
+                            <li>⚔️ La criatura ataca según sus reglas específicas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🐉 CRIATURAS Y SUS EFECTOS</h2>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>🐍 SERPIENTES MARINAS</h3>
+                        <ul>
+                            <li>🎯 Atacan a nadadores y supervivientes en balsas</li>
+                            <li>💀 Eliminan supervivientes al contacto</li>
+                            <li>🌊 Se mueven por casillas de agua</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🦈 TIBURONES</h3>
+                        <ul>
+                            <li>🏊 Atacan solo a nadadores</li>
+                            <li>💀 Eliminan supervivientes en el agua</li>
+                            <li>🚤 No atacan balsas directamente</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🐲 KAIJUS (NOVEDAD EDICIÓN REVISADA)</h3>
+                        <ul>
+                            <li>🏝️ Se mueven por tierra y agua</li>
+                            <li>💥 Destruyen todo a su paso</li>
+                            <li>🚤 Pueden destruir balsas</li>
+                            <li>👥 Eliminan múltiples supervivientes</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🐋 BALLENAS</h3>
+                        <ul>
+                            <li>🚤 Atacan y destruyen balsas</li>
+                            <li>💧 Los supervivientes caen al agua</li>
+                            <li>🌊 Emergen desde las profundidades</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🏞️ TIPOS DE TERRENO</h2>
+                <div class="hit-modifiers">
+                    <div class="modifier">
+                        <span class="modifier-name">🏖️ PLAYA</span>
+                        <span class="modifier-value">Se retiran primero</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">🌳 JUNGLA</span>
+                        <span class="modifier-value">Se retiran en segundo lugar</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">⛰️ MONTAÑA</span>
+                        <span class="modifier-value">Se retiran al final</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">🌋 VOLCÁN</span>
+                        <span class="modifier-value">Termina el juego al revelarse el 3º</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🎴 EFECTOS ESPECIALES DE FICHAS</h2>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>⚡ EFECTOS INMEDIATOS</h3>
+                        <ul>
+                            <li>🌊 <strong>Remolino:</strong> Elimina todo en casillas adyacentes</li>
+                            <li>🐋 <strong>Ballena:</strong> Aparece una ballena</li>
+                            <li>🚤 <strong>Balsa:</strong> Aparece una balsa nueva</li>
+                            <li>🥚 <strong>Huevo:</strong> Eclosiona en criatura aleatoria</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🎴 CAPACIDADES GUARDADAS</h3>
+                        <ul>
+                            <li>🚣 <strong>Remos:</strong> Movimiento extra para balsas</li>
+                            <li>🐬 <strong>Delfín:</strong> Protección contra criaturas marinas</li>
+                            <li>🏊 <strong>Natación:</strong> Movimiento extra en agua</li>
+                            <li>⚡ <strong>Velocidad:</strong> Puntos de movimiento adicionales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🏆 FIN DEL JUEGO Y PUNTUACIÓN</h2>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>🔚 CONDICIONES DE FIN</h3>
+                        <ul>
+                            <li>🌋 Se revela el tercer volcán</li>
+                            <li>🏝️ La isla desaparece completamente</li>
+                            <li>👥 Todos los supervivientes han escapado o sido eliminados</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🏆 PUNTUACIÓN</h3>
+                        <ul>
+                            <li>🏝️ Solo cuentan supervivientes en tierra firme</li>
+                            <li>💎 Cada superviviente vale 1-6 puntos (valor secreto)</li>
+                            <li>🥇 Gana quien tenga más puntos totales</li>
+                            <li>🤝 En caso de empate: gana quien salvó más supervivientes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🆕 NOVEDADES EDICIÓN REVISADA (2024)</h2>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>🎨 MEJORAS VISUALES</h3>
+                        <ul>
+                            <li>🖼️ Nuevas ilustraciones de Lina Cossette</li>
+                            <li>🎁 Diseño de caja renovado</li>
+                            <li>🪵 Componentes de madera de alta calidad</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🎮 MEJORAS DE JUEGO</h3>
+                        <ul>
+                            <li>📖 Reglamento simplificado</li>
+                            <li>👥 Soporte para 5º jugador</li>
+                            <li>🐲 <strong>Nuevos Kaijus:</strong> Criaturas colosales exclusivas</li>
+                            <li>⚖️ Mejor equilibrio de juego</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>💡 ESTRATEGIAS BÁSICAS</h2>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>🧠 MEMORIA</h3>
+                        <ul>
+                            <li>🎯 Recuerda el valor de tus supervivientes</li>
+                            <li>💎 Prioriza salvar a los de mayor valor</li>
+                            <li>👀 Observa las acciones de otros jugadores</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🎲 CONTROL DE CRIATURAS</h3>
+                        <ul>
+                            <li>🐉 Usa criaturas para bloquear a oponentes</li>
+                            <li>🛡️ Protege tus rutas de escape</li>
+                            <li>⚔️ Ataca estratégicamente a otros jugadores</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🚤 GESTIÓN DE BALSAS</h3>
+                        <ul>
+                            <li>🏊 No dependas solo de la natación</li>
+                            <li>👥 Controla balsas con mayoría</li>
+                            <li>🤝 Negocia pasajes con otros jugadores</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🏝️ HUNDIMIENTO TÁCTICO</h3>
+                        <ul>
+                            <li>🎯 Retira fichas que beneficien a oponentes</li>
+                            <li>🛡️ Protege tus rutas de escape</li>
+                            <li>💥 Usa efectos para crear caos estratégico</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

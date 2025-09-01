@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catán - Game Resumes</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="game-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <a href="../index.html" class="back-btn">← VOLVER</a>
+            <h1 class="game-title">🏝️ CATÁN</h1>
+        </header>
+
+        <main class="game-content">
+            <div class="content-section">
+                <h2>🎯 INFORMACIÓN GENERAL</h2>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>👥 Jugadores</h3>
+                        <p>3-4 jugadores (5-6 con expansión)</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>⏱️ Duración</h3>
+                        <p>60-90 minutos</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🎂 Edad</h3>
+                        <p>10+ años</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>🏆 Victoria</h3>
+                        <p>Primer jugador en alcanzar 10 puntos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🗺️ COMPONENTES DEL JUEGO</h2>
+                <div class="terrain-rules">
+                    <h3>🏞️ Hexágonos de Terreno</h3>
+                    <div class="terrain-grid">
+                        <div class="terrain-type">
+                            <span class="terrain-icon">🌲</span>
+                            <strong>Bosque</strong>
+                            <p>Produce Madera</p>
+                        </div>
+                        <div class="terrain-type">
+                            <span class="terrain-icon">🏔️</span>
+                            <strong>Montaña</strong>
+                            <p>Produce Mineral</p>
+                        </div>
+                        <div class="terrain-type">
+                            <span class="terrain-icon">🧱</span>
+                            <strong>Cerro</strong>
+                            <p>Produce Arcilla</p>
+                        </div>
+                        <div class="terrain-type">
+                            <span class="terrain-icon">🌾</span>
+                            <strong>Sembrado</strong>
+                            <p>Produce Cereales</p>
+                        </div>
+                        <div class="terrain-type">
+                            <span class="terrain-icon">🐑</span>
+                            <strong>Pasto</strong>
+                            <p>Produce Lana</p>
+                        </div>
+                        <div class="terrain-type">
+                            <span class="terrain-icon">🏜️</span>
+                            <strong>Desierto</strong>
+                            <p>No produce recursos (Ladrón inicial)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🏗️ CONSTRUCCIONES Y COSTOS</h2>
+                <div class="hit-table">
+                    <div class="table-header">
+                        <div class="col">Construcción</div>
+                        <div class="col">Costo</div>
+                        <div class="col">Puntos</div>
+                        <div class="col">Beneficio</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col">🛣️ Carretera</div>
+                        <div class="col">1 Madera + 1 Arcilla</div>
+                        <div class="col">0</div>
+                        <div class="col">Conecta poblados</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col">🏘️ Poblado</div>
+                        <div class="col">1 Madera + 1 Arcilla + 1 Lana + 1 Cereales</div>
+                        <div class="col">1</div>
+                        <div class="col">1 recurso por hexágono adyacente</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col">🏙️ Ciudad</div>
+                        <div class="col">3 Mineral + 2 Cereales</div>
+                        <div class="col">2</div>
+                        <div class="col">2 recursos por hexágono adyacente</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col">🎴 Carta Desarrollo</div>
+                        <div class="col">1 Lana + 1 Mineral + 1 Cereales</div>
+                        <div class="col">Variable</div>
+                        <div class="col">Efectos especiales</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🎲 SECUENCIA DE TURNO</h2>
+                <div class="phase-list">
+                    <div class="phase">
+                        <h3>1️⃣ TIRAR DADOS</h3>
+                        <ul>
+                            <li>🎲 Tira 2 dados de 6 caras</li>
+                            <li>📊 Suma el resultado (2-12)</li>
+                            <li>🏠 Todos los jugadores con poblados/ciudades en hexágonos con ese número reciben recursos</li>
+                            <li>⚠️ Si sale 7: activa el Ladrón</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>2️⃣ COMERCIO</h3>
+                        <ul>
+                            <li>🤝 Intercambia recursos con otros jugadores</li>
+                            <li>🏪 Comercia con puertos (2:1 o 3:1)</li>
+                            <li>🏦 Comercia con la banca (4:1)</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>3️⃣ CONSTRUCCIÓN</h3>
+                        <ul>
+                            <li>🏗️ Construye carreteras, poblados o ciudades</li>
+                            <li>🎴 Compra cartas de desarrollo</li>
+                            <li>🃏 Juega cartas de desarrollo (excepto las compradas este turno)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🦹 EL LADRÓN</h2>
+                <div class="battleshock-rules">
+                    <h3>⚠️ Cuando sale 7 en los dados:</h3>
+                    <ul>
+                        <li>🃏 Jugadores con más de 7 cartas descartan la mitad (redondeando hacia abajo)</li>
+                        <li>🦹 El jugador activo mueve el Ladrón a cualquier hexágono</li>
+                        <li>🚫 Ese hexágono no produce recursos mientras el Ladrón esté ahí</li>
+                        <li>🎯 Roba 1 carta al azar de un jugador con poblado/ciudad adyacente al Ladrón</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🎴 CARTAS DE DESARROLLO</h2>
+                <div class="cover-types">
+                    <div class="cover-type">
+                        <h3>⚔️ Caballero (14 cartas)</h3>
+                        <p>Mueve el Ladrón como si hubieras sacado un 7. El jugador con más Caballeros jugados (mínimo 3) obtiene "Ejército más Grande" (2 puntos).</p>
+                    </div>
+                    <div class="cover-type">
+                        <h3>🛣️ Construcción de Carreteras (2 cartas)</h3>
+                        <p>Construye 2 carreteras gratis inmediatamente.</p>
+                    </div>
+                    <div class="cover-type">
+                        <h3>📦 Invención (2 cartas)</h3>
+                        <p>Toma 2 recursos cualesquiera de la banca.</p>
+                    </div>
+                    <div class="cover-type">
+                        <h3>🌾 Monopolio (2 cartas)</h3>
+                        <p>Todos los jugadores te dan todas sus cartas de un recurso que elijas.</p>
+                    </div>
+                    <div class="cover-type">
+                        <h3>🏆 Punto de Victoria (5 cartas)</h3>
+                        <p>1 punto de victoria. Se mantiene secreta hasta que ganes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🏆 PUNTOS DE VICTORIA</h2>
+                <div class="hit-modifiers">
+                    <div class="modifier">
+                        <span class="modifier-name">🏘️ Poblado</span>
+                        <span class="modifier-value">1 punto</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">🏙️ Ciudad</span>
+                        <span class="modifier-value">2 puntos</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">🛣️ Carretera más Larga</span>
+                        <span class="modifier-value">2 puntos (mínimo 5 carreteras)</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">⚔️ Ejército más Grande</span>
+                        <span class="modifier-value">2 puntos (mínimo 3 caballeros)</span>
+                    </div>
+                    <div class="modifier">
+                        <span class="modifier-name">🎴 Cartas de Desarrollo</span>
+                        <span class="modifier-value">1 punto cada una (5 cartas)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>💡 ESTRATEGIAS BÁSICAS</h2>
+                <div class="faction-content">
+                    <h3>🎯 Colocación Inicial</h3>
+                    <ul>
+                        <li>🎲 Prioriza números con alta probabilidad (6, 8, 5, 9)</li>
+                        <li>🌈 Busca diversidad de recursos</li>
+                        <li>🏪 Considera acceso a puertos</li>
+                        <li>🛣️ Planifica rutas de expansión</li>
+                    </ul>
+                    
+                    <h3>📊 Probabilidades de los Dados</h3>
+                    <ul>
+                        <li>🎯 6 y 8: 5/36 (13.9%) - Números rojos, más probables</li>
+                        <li>🎯 5 y 9: 4/36 (11.1%)</li>
+                        <li>🎯 4 y 10: 3/36 (8.3%)</li>
+                        <li>🎯 3 y 11: 2/36 (5.6%)</li>
+                        <li>🎯 2 y 12: 1/36 (2.8%) - Menos probables</li>
+                    </ul>
+                    
+                    <h3>🤝 Comercio</h3>
+                    <ul>
+                        <li>💰 Comercia activamente, es clave para ganar</li>
+                        <li>🎯 Identifica qué necesitan otros jugadores</li>
+                        <li>🚫 No ayudes al líder a menos que sea muy beneficioso</li>
+                        <li>⏰ Comercia antes de que otros sepan qué planeas construir</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>📋 REGLAS IMPORTANTES</h2>
+                <div class="missions">
+                    <h3>🏗️ Construcción</h3>
+                    <ul>
+                        <li>🛣️ Las carreteras deben conectar con tus construcciones existentes</li>
+                        <li>🏘️ Los poblados deben estar a al menos 2 intersecciones de distancia</li>
+                        <li>🏙️ Solo puedes mejorar tus propios poblados a ciudades</li>
+                        <li>🎴 Las cartas de desarrollo se juegan al inicio del turno (excepto Caballeros)</li>
+                    </ul>
+                    
+                    <h3>🎲 Dados y Recursos</h3>
+                    <ul>
+                        <li>🏠 Poblados reciben 1 recurso, ciudades reciben 2</li>
+                        <li>🦹 El Ladrón bloquea la producción del hexágono donde está</li>
+                        <li>🃏 Límite de 7 cartas en mano al final del turno de otros jugadores</li>
+                        <li>🏆 La victoria es inmediata al alcanzar 10 puntos</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

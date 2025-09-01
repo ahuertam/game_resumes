@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warhammer Fantasy 8ª Edición - Resumen</title>
+    <link rel="stylesheet" href="game-page.css">
+</head>
+<body>
+    <div class="game-header">
+        <button class="back-btn" onclick="window.location.href='../index.html'">← VOLVER</button>
+        <h1>WARHAMMER FANTASY 8ª EDICIÓN</h1>
+    </div>
+
+    <div class="game-content">
+        <!-- Reglas Generales -->
+        <div class="content-section">
+            <h2>REGLAS GENERALES</h2>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <h3>CARACTERÍSTICAS</h3>
+                    <p><strong>M:</strong> Movimiento (pulgadas)<br>
+                    <strong>WS:</strong> Habilidad de Armas<br>
+                    <strong>BS:</strong> Habilidad Balística<br>
+                    <strong>S:</strong> Fuerza<br>
+                    <strong>T:</strong> Resistencia<br>
+                    <strong>W:</strong> Heridas<br>
+                    <strong>I:</strong> Iniciativa<br>
+                    <strong>A:</strong> Ataques<br>
+                    <strong>Ld:</strong> Liderazgo</p>
+                </div>
+                <div class="rule-card">
+                    <h3>TAMAÑO DE MESA</h3>
+                    <p>6' x 4' (180cm x 120cm) para partidas estándar. Despliegue a 24" de distancia entre ejércitos.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>PUNTOS</h3>
+                    <p>Partidas estándar: 2000-2500 puntos. Cada ejército debe tener al menos 25% de unidades Básicas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fases del Juego -->
+        <div class="content-section">
+            <h2>FASES DEL JUEGO</h2>
+            <div class="phase-list">
+                <div class="phase">
+                    <h3>1. FASE DE MOVIMIENTO</h3>
+                    <ul>
+                        <li>Mueve todas las unidades que puedas</li>
+                        <li>Movimiento normal: hasta el valor de M</li>
+                        <li>Marcha: doble movimiento (no puede disparar)</li>
+                        <li>Cargas: 2D6" adicionales al movimiento</li>
+                        <li>Reformar: cambiar formación (no puede marchar)</li>
+                    </ul>
+                </div>
+                <div class="phase">
+                    <h3>2. FASE DE MAGIA</h3>
+                    <ul>
+                        <li>Genera dados de poder (2D6 + modificadores)</li>
+                        <li>El oponente genera dados de disipar (igual cantidad)</li>
+                        <li>Lanza hechizos con magos</li>
+                        <li>El oponente puede intentar disipar</li>
+                        <li>Resuelve efectos de hechizos exitosos</li>
+                    </ul>
+                </div>
+                <div class="phase">
+                    <h3>3. FASE DE DISPARO</h3>
+                    <ul>
+                        <li>Declara todos los disparos</li>
+                        <li>Mide distancias y línea de visión</li>
+                        <li>Tira para impactar (BS vs modificadores)</li>
+                        <li>Tira para herir (S vs T)</li>
+                        <li>Aplica salvaciones por armadura</li>
+                        <li>Retira bajas y chequea pánico si es necesario</li>
+                    </ul>
+                </div>
+                <div class="phase">
+                    <h3>4. FASE DE COMBATE</h3>
+                    <ul>
+                        <li>Ambos jugadores luchan en combates existentes</li>
+                        <li>Orden de iniciativa (mayor I primero)</li>
+                        <li>Tira para impactar (WS vs WS)</li>
+                        <li>Tira para herir (S vs T)</li>
+                        <li>Aplica salvaciones</li>
+                        <li>Calcula resultado de combate</li>
+                        <li>Chequeos de moral y persecución</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla de Impactar en Combate -->
+        <div class="content-section">
+            <h2>TABLA DE IMPACTAR EN COMBATE</h2>
+            <div class="hit-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>WS del Atacante</th>
+                            <th>WS del Defensor</th>
+                            <th>Necesita para Impactar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Igual o menor</td>
+                            <td>WS del defensor</td>
+                            <td>4+</td>
+                        </tr>
+                        <tr>
+                            <td>Mayor</td>
+                            <td>WS del defensor</td>
+                            <td>3+</td>
+                        </tr>
+                        <tr>
+                            <td>Doble o más</td>
+                            <td>WS del defensor</td>
+                            <td>2+</td>
+                        </tr>
+                        <tr>
+                            <td>Menor que la mitad</td>
+                            <td>WS del defensor</td>
+                            <td>5+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Reglas Especiales Importantes -->
+        <div class="content-section">
+            <h2>REGLAS ESPECIALES IMPORTANTES</h2>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <h3>RANGOS</h3>
+                    <p>Unidades con 5+ modelos en fila tienen rango. +1 Resultado de Combate por rango después del primero (máximo +3).</p>
+                </div>
+                <div class="rule-card">
+                    <h3>FIRME</h3>
+                    <p>Unidades con más rangos que el enemigo son Firmes. Usan Ld sin modificadores negativos por perder combate.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>PÁNICO</h3>
+                    <p>Chequeo de Ld cuando unidad amiga a 6" es destruida o huye. Falla = huida inmediata.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>PERSECUCIÓN</h3>
+                    <p>Ganador puede perseguir enemigo que huye. Ambos tiran 2D6+M. Si alcanza, destruye la unidad.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- El Imperio -->
+        <div class="content-section">
+            <h2>EL IMPERIO</h2>
+            <div class="faction-content">
+                <h3>Reglas Especiales de Facción</h3>
+                <div class="abilities">
+                    <div class="ability">
+                        <strong>Unidades Regimentales:</strong> Algunas unidades pueden tomar Destacamentos (unidades de apoyo de 5 a la mitad del tamaño de la unidad principal). Los Destacamentos usan el Liderazgo de la unidad principal si están a 3".
+                    </div>
+                    <div class="ability">
+                        <strong>Disciplina Imperial:</strong> Acceso a una amplia variedad de tropas especializadas y máquinas de guerra avanzadas.
+                    </div>
+                </div>
+
+                <h4>Unidades Básicas Clave</h4>
+                <ul>
+                    <li><strong>Alabarderos:</strong> Infantería básica con alabardas (S+1, golpea en dos filas)</li>
+                    <li><strong>Lanceros:</strong> Infantería defensiva con lanzas (+1 S en carga, golpea en dos filas)</li>
+                    <li><strong>Espadachines:</strong> Infantería de élite con espadas y escudos (6+ salvación por armadura)</li>
+                    <li><strong>Ballesteros:</strong> Tropas de disparo a distancia (30" alcance, S4)</li>
+                    <li><strong>Arcabuceros:</strong> Armas de fuego (24" alcance, S4, -1 para impactar en movimiento)</li>
+                    <li><strong>Órdenes de Caballería:</strong> Caballería pesada versátil</li>
+                </ul>
+
+                <h4>Unidades Especiales</h4>
+                <ul>
+                    <li><strong>Grandes Espadas:</strong> Infantería de élite con espadas a dos manos (S+2, golpea en dos filas)</li>
+                    <li><strong>Caballeros Demigrifo:</strong> Caballería monstruosa de élite</li>
+                    <li><strong>Pistoleros:</strong> Caballería ligera con pistolas</li>
+                    <li><strong>Cañón Imperial:</strong> Artillería pesada (S10, perforante)</li>
+                    <li><strong>Mortero:</strong> Artillería indirecta (plantilla)</li>
+                </ul>
+
+                <h4>Unidades Raras</h4>
+                <ul>
+                    <li><strong>Tanque de Vapor:</strong> Vehículo único con cañón de vapor</li>
+                    <li><strong>Cañón Volley Helblaster:</strong> Múltiples disparos devastadores</li>
+                    <li><strong>Huracán Celestial:</strong> Carro mágico de apoyo</li>
+                    <li><strong>Luminarca de Hysh:</strong> Carro con láser de luz</li>
+                </ul>
+
+                <h4>Estilo de Juego</h4>
+                <p>El Imperio es un ejército equilibrado que combina infantería sólida, potente artillería y caballería versátil. Excela en combate a distancia y tiene acceso a poderosa magia. Su fortaleza radica en la coordinación entre diferentes tipos de tropas y el uso efectivo de destacamentos para apoyar unidades principales.</p>
+            </div>
+        </div>
+
+        <!-- Guerreros del Caos -->
+        <div class="content-section">
+            <h2>GUERREROS DEL CAOS</h2>
+            <div class="faction-content">
+                <h3>Reglas Especiales de Facción</h3>
+                <div class="abilities">
+                    <div class="ability">
+                        <strong>Marcas del Caos:</strong> Las unidades pueden recibir marcas de los Dioses del Caos (Khorne, Tzeentch, Nurgle, Slaanesh) que otorgan habilidades especiales.
+                    </div>
+                    <div class="ability">
+                        <strong>Ojos de los Dioses:</strong> Los personajes pueden ganar recompensas del Caos al matar enemigos en combate.
+                    </div>
+                </div>
+
+                <h4>Unidades Básicas Clave</h4>
+                <ul>
+                    <li><strong>Guerreros del Caos:</strong> Infantería de élite (WS4, S4, T4, 3+ salvación)</li>
+                    <li><strong>Merodeadores:</strong> Infantería bárbara más barata y rápida</li>
+                    <li><strong>Caballeros del Caos:</strong> Caballería pesada devastadora (1+ salvación)</li>
+                </ul>
+
+                <h4>Unidades Especiales</h4>
+                <ul>
+                    <li><strong>Elegidos:</strong> Guerreros del Caos de élite con equipo mejorado</li>
+                    <li><strong>Caballería Merodeadora:</strong> Caballería ligera y rápida</li>
+                    <li><strong>Carros del Caos:</strong> Vehículos de guerra tirados por bestias</li>
+                    <li><strong>Dragón Ogros:</strong> Monstruos mutantes poderosos</li>
+                    <li><strong>Cañón Infernal:</strong> Artillería demoníaca impredecible</li>
+                </ul>
+
+                <h4>Unidades Raras</h4>
+                <ul>
+                    <li><strong>Gigante del Caos:</strong> Monstruo masivo con ataques aleatorios</li>
+                    <li><strong>Quimera:</strong> Monstruo volador con múltiples ataques</li>
+                    <li><strong>Engendro del Caos:</strong> Monstruo mutante regenerativo</li>
+                </ul>
+
+                <h4>Marcas de los Dioses</h4>
+                <ul>
+                    <li><strong>Khorne:</strong> +1 Ataque, Frenesí, no puede usar magia</li>
+                    <li><strong>Tzeentch:</strong> Salvación especial 6+, +1 a disipar</li>
+                    <li><strong>Nurgle:</strong> -1 S a ataques enemigos, Inmune a Veneno</li>
+                    <li><strong>Slaanesh:</strong> +1 Iniciativa, Inmune a Psicología</li>
+                </ul>
+
+                <h4>Estilo de Juego</h4>
+                <p>Los Guerreros del Caos son el ejército de combate cuerpo a cuerpo más poderoso. Cada unidad es costosa pero extremadamente resistente y letal. Su estrategia se basa en avanzar implacablemente y destruir al enemigo en combate directo. Tienen poca artillería pero compensan con monstruos devastadores.</p>
+            </div>
+        </div>
+
+        <!-- Demonios del Caos -->
+        <div class="content-section">
+            <h2>DEMONIOS DEL CAOS</h2>
+            <div class="faction-content">
+                <h3>Reglas Especiales de Facción</h3>
+                <div class="abilities">
+                    <div class="ability">
+                        <strong>Inestabilidad Demoníaca:</strong> En lugar de chequeos de moral, los demonios sufren heridas automáticas si pierden combate.
+                    </div>
+                    <div class="ability">
+                        <strong>Salvación Demoníaca:</strong> Salvación especial 5+ que no puede ser modificada por Fuerza o reglas especiales.
+                    </div>
+                </div>
+
+                <h4>Demonios de Khorne</h4>
+                <ul>
+                    <li><strong>Sabuesos de Khorne:</strong> Demonios rápidos de caballería (M9, Vanguardia)</li>
+                    <li><strong>Portadores de Sangre:</strong> Infantería demoníaca básica (Frenesí)</li>
+                    <li><strong>Sabuesos Carnívoros:</strong> Bestias de guerra feroces</li>
+                    <li><strong>Derramador de Sangre:</strong> Demonio Mayor devastador en combate</li>
+                </ul>
+
+                <h4>Demonios de Tzeentch</h4>
+                <ul>
+                    <li><strong>Horrores Rosa:</strong> Demonios lanzadores de hechizos que se dividen al morir</li>
+                    <li><strong>Llamas de Tzeentch:</strong> Bestias voladoras con ataques de aliento</li>
+                    <li><strong>Gritones:</strong> Demonios voladores rápidos</li>
+                    <li><strong>Señor del Cambio:</strong> Demonio Mayor mago poderoso</li>
+                </ul>
+
+                <h4>Demonios de Nurgle</h4>
+                <ul>
+                    <li><strong>Portadores de Plaga:</strong> Infantería resistente con ataques venenosos</li>
+                    <li><strong>Nurglings:</strong> Enjambres de pequeños demonios</li>
+                    <li><strong>Bestias de Nurgle:</strong> Monstruos lentos pero mortales</li>
+                    <li><strong>Gran Demonio Impuro:</strong> Demonio Mayor extremadamente resistente</li>
+                </ul>
+
+                <h4>Demonios de Slaanesh</h4>
+                <ul>
+                    <li><strong>Daemonettes:</strong> Demonios rápidos con múltiples ataques</li>
+                    <li><strong>Buscadores:</strong> Caballería demoníaca veloz</li>
+                    <li><strong>Monturas de Slaanesh:</strong> Bestias de caballería seductoras</li>
+                    <li><strong>Guardián de los Secretos:</strong> Demonio Mayor ágil y letal</li>
+                </ul>
+
+                <h4>Demonios Menores</h4>
+                <ul>
+                    <li><strong>Furias:</strong> Demonios voladores básicos</li>
+                    <li><strong>Príncipe Demonio:</strong> Comandante poderoso y versátil</li>
+                </ul>
+
+                <h4>Estilo de Juego</h4>
+                <p>Los Demonios del Caos son un ejército único que no usa moral tradicional. Cada dios ofrece un estilo diferente: Khorne para combate directo, Tzeentch para magia y movilidad, Nurgle para resistencia, y Slaanesh para velocidad. Su principal debilidad es la Inestabilidad Demoníaca, pero compensan con habilidades especiales únicas y salvaciones demoníacas.</p>
+            </div>
+        </div>
+
+        <!-- Consejos Generales -->
+        <div class="content-section">
+            <h2>CONSEJOS GENERALES</h2>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <h3>FORMACIONES</h3>
+                    <p>Mantén unidades en formaciones amplias para maximizar ataques. Los rangos dan bonificaciones en combate.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>POSICIONAMIENTO</h3>
+                    <p>Usa terreno para proteger flancos. Coordina cargas múltiples para romper líneas enemigas.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>MAGIA</h3>
+                    <p>La magia puede cambiar el curso de la batalla. Protege tus magos y apunta a los enemigos.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>MORAL</h3>
+                    <p>Controla el pánico y la moral. Las unidades que huyen pueden causar reacciones en cadena.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
