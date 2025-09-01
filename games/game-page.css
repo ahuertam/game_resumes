@@ -1,4 +1,16 @@
-/* Estilos específicos para páginas de juegos */
+/* Importar fuentes más legibles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    min-height: 100vh;
+}
+
 .game-header {
     display: flex;
     align-items: center;
@@ -8,6 +20,14 @@
     background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
     border: 3px solid #ffffff;
     box-shadow: 6px 6px 0px #000000;
+}
+
+.game-header h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 3px 3px 0px #000000;
+    margin: 0;
 }
 
 .back-btn {
@@ -42,6 +62,7 @@
 }
 
 .content-section h2 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 16px;
     margin-bottom: 20px;
     text-align: center;
@@ -64,13 +85,16 @@
 }
 
 .rule-card h3 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 10px;
     margin-bottom: 10px;
     color: #e74c3c;
 }
 
 .rule-card p {
-    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     opacity: 0.9;
 }
 
@@ -88,6 +112,7 @@
 }
 
 .phase h3 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 12px;
     margin-bottom: 15px;
     color: #f39c12;
@@ -100,7 +125,9 @@
 }
 
 .phase li {
-    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 8px;
     padding: 8px;
     background: rgba(255, 255, 255, 0.1);
@@ -121,6 +148,7 @@
 }
 
 .movement-type h3 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 11px;
     margin-bottom: 10px;
     color: #3498db;
@@ -128,61 +156,59 @@
 }
 
 .movement-type p {
-    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 5px;
-    line-height: 1.4;
 }
 
 .movement-type strong {
     color: #e74c3c;
+    font-weight: 600;
 }
 
-/* Estilos para tabla de impactar */
+/* Estilos mejorados para tabla de impactar */
 .hit-table {
     background: #2c3e50;
     border: 2px solid #ffffff;
     margin-bottom: 20px;
     box-shadow: 4px 4px 0px #000000;
+    border-radius: 0;
+    overflow: hidden;
 }
 
-.table-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.hit-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hit-table th {
     background: #e74c3c;
-    border-bottom: 2px solid #ffffff;
-}
-
-.table-header .col {
-    padding: 10px;
-    font-size: 9px;
+    color: #ffffff;
+    padding: 12px 8px;
+    font-size: 14px;
+    font-weight: 600;
     text-align: center;
-    font-weight: bold;
-    border-right: 1px solid #ffffff;
+    border: 1px solid #ffffff;
 }
 
-.table-header .col:last-child {
-    border-right: none;
-}
-
-.table-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-bottom: 1px solid #ffffff;
-}
-
-.table-row:last-child {
-    border-bottom: none;
-}
-
-.table-row .col {
-    padding: 8px;
-    font-size: 8px;
+.hit-table td {
+    background: #34495e;
+    color: #ecf0f1;
+    padding: 10px 8px;
+    font-size: 13px;
     text-align: center;
-    border-right: 1px solid #ffffff;
+    border: 1px solid #ffffff;
 }
 
-.table-row .col:last-child {
-    border-right: none;
+.hit-table tr:nth-child(even) td {
+    background: #2c3e50;
+}
+
+.hit-table tr:hover td {
+    background: #3498db;
+    color: #ffffff;
 }
 
 .hit-modifiers {
@@ -193,6 +219,7 @@
 }
 
 .hit-modifiers h3 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 11px;
     margin-bottom: 10px;
     color: #f39c12;
@@ -204,7 +231,9 @@
 }
 
 .hit-modifiers li {
-    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 5px;
     padding: 5px;
     background: rgba(255, 255, 255, 0.1);
@@ -224,6 +253,7 @@
 }
 
 .terrain-type h3 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 12px;
     margin-bottom: 15px;
     color: #27ae60;
@@ -236,7 +266,9 @@
 }
 
 .terrain-type li {
-    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 5px;
     padding: 5px;
     background: rgba(255, 255, 255, 0.1);
@@ -256,13 +288,16 @@
 }
 
 .cover-rule h4 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 9px;
     margin-bottom: 5px;
     color: #f39c12;
 }
 
 .cover-rule p {
-    font-size: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
     margin-bottom: 3px;
 }
 
@@ -280,13 +315,16 @@
 }
 
 .terrain-card h4 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 9px;
     margin-bottom: 5px;
     color: #3498db;
 }
 
 .terrain-card p {
-    font-size: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 /* Estilos para acobardamiento */
@@ -309,6 +347,7 @@
 .battleshock-process h3,
 .battleshock-effects h3,
 .battleshock-example h3 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 11px;
     margin-bottom: 10px;
     color: #e74c3c;
@@ -320,9 +359,10 @@
 }
 
 .battleshock-process li {
-    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 5px;
-    line-height: 1.4;
 }
 
 .effect-list {
@@ -337,6 +377,7 @@
 }
 
 .effect h4 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 9px;
     margin-bottom: 8px;
     color: #f39c12;
@@ -348,23 +389,28 @@
 }
 
 .effect li {
-    font-size: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
     margin-bottom: 3px;
     padding: 3px;
     background: rgba(255, 255, 255, 0.1);
 }
 
 .battleshock-example p {
-    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 5px;
-    line-height: 1.4;
 }
 
 .battleshock-example strong {
     color: #f39c12;
+    font-weight: 600;
 }
 
 .faction-content h3 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 12px;
     margin-bottom: 15px;
     color: #f39c12;
@@ -372,6 +418,7 @@
 }
 
 .faction-content h4 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 10px;
     margin: 15px 0 10px 0;
     color: #3498db;
@@ -386,7 +433,9 @@
     padding: 10px;
     margin-bottom: 8px;
     border: 2px solid #ffffff;
-    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     box-shadow: 2px 2px 0px #000000;
 }
 
@@ -396,7 +445,9 @@
 }
 
 .faction-content li {
-    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     margin-bottom: 5px;
     padding: 5px;
     background: rgba(255, 255, 255, 0.1);
@@ -416,13 +467,16 @@
 }
 
 .mission h3 {
+    font-family: 'Press Start 2P', monospace;
     font-size: 10px;
     margin-bottom: 8px;
     color: #9b59b6;
 }
 
 .mission p {
-    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     opacity: 0.9;
 }
 
@@ -434,6 +488,10 @@
         gap: 15px;
     }
     
+    .game-header h1 {
+        font-size: 14px;
+    }
+    
     .rules-grid {
         grid-template-columns: 1fr;
     }
@@ -442,18 +500,24 @@
         padding: 20px;
     }
     
-    .table-header,
-    .table-row {
-        grid-template-columns: 1fr;
-    }
-    
-    .table-header .col,
-    .table-row .col {
-        border-right: none;
-        border-bottom: 1px solid #ffffff;
+    .hit-table th,
+    .hit-table td {
+        padding: 8px 4px;
+        font-size: 12px;
     }
     
     .terrain-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .phase li,
+    .movement-type p,
+    .terrain-type li,
+    .battleshock-process li,
+    .battleshock-example p,
+    .ability,
+    .faction-content li,
+    .mission p {
+        font-size: 13px;
     }
 }
