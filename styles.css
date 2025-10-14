@@ -348,3 +348,118 @@ body {
 .main-header:hover h1 {
     animation-duration: 0.5s;
 }
+
+.hit-process, .combat-phase {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.process-step, .combat-step {
+    background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.combat-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.modifier-limits {
+    background: linear-gradient(135deg, #8B0000, #4B0000);
+    border: 2px solid #FF6B6B;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.targeting-rules {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.example-scenario {
+    background: linear-gradient(135deg, #1a4a1a, #0a2a0a);
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+/* Estilos para la sección expandida de Tiránidos */
+.enhancements-grid, .abilities-grid, .stratagems-grid, .objectives-grid, .units-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.enhancements-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.abilities-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.stratagems-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.objectives-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.units-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.enhancement, .ability, .stratagem, .objective, .unit-card {
+    background: linear-gradient(135deg, #2a1a4a, #1a0a2a);
+    border: 2px solid #8B4B8B;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(139, 75, 139, 0.3);
+}
+
+.enhancement h4, .ability h4, .stratagem h4, .objective h4, .unit-card h4 {
+    color: #E6B3FF;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #8B4B8B;
+    padding-bottom: 0.5rem;
+}
+
+.stratagem-effects, .objective-details, .ability-description, .enhancement-details {
+    margin-top: 0.5rem;
+}
+
+.warlord-stats {
+    background: linear-gradient(135deg, #4a2a1a, #2a1a0a);
+    border: 2px solid #CD853F;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.playstyle-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.strengths, .tactics {
+    background: linear-gradient(135deg, #1a4a2a, #0a2a1a);
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.faction-overview {
+    background: linear-gradient(135deg, #4a1a1a, #2a0a0a);
+    border: 2px solid #8B0000;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}

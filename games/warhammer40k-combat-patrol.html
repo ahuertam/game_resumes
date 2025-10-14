@@ -115,187 +115,370 @@
             </div>
 
             <div class="content-section">
-                <h2>🎯 TABLA DE TIRADAS PARA IMPACTAR</h2>
-                <div class="hit-table">
-                    <div class="table-header">
-                        <div class="col">Habilidad de Armas (HA)</div>
-                        <div class="col">Tirada Necesaria</div>
-                        <div class="col">Probabilidad</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="col">2+</div>
-                        <div class="col">2, 3, 4, 5, 6</div>
-                        <div class="col">83.3%</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="col">3+</div>
-                        <div class="col">3, 4, 5, 6</div>
-                        <div class="col">66.7%</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="col">4+</div>
-                        <div class="col">4, 5, 6</div>
-                        <div class="col">50%</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="col">5+</div>
-                        <div class="col">5, 6</div>
-                        <div class="col">33.3%</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="col">6+</div>
-                        <div class="col">6</div>
-                        <div class="col">16.7%</div>
-                    </div>
-                </div>
-                <div class="hit-modifiers">
-                    <h3>🎯 Modificadores Comunes</h3>
-                    <ul>
-                        <li><strong>+1:</strong> Unidad no se movió (Permanencia)</li>
-                        <li><strong>-1:</strong> Objetivo en cobertura</li>
-                        <li><strong>-1:</strong> Disparador se movió y disparó arma Pesada</li>
-                        <li><strong>-1:</strong> Objetivo a más de la mitad del alcance</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="content-section">
-                <h2>🏠 COBERTURA, TERRENO Y VISIBILIDAD</h2>
-                <div class="terrain-rules">
-                    <div class="terrain-type">
-                        <h3>👁️ LÍNEA DE VISIÓN</h3>
+                <h2>🎯 TIRADAS PARA IMPACTAR - PROCESO DETALLADO</h2>
+                <div class="hit-process">
+                    <div class="process-step">
+                        <h3>1️⃣ ATAQUES A DISTANCIA</h3>
                         <ul>
-                            <li>📏 Se traza desde cualquier punto del modelo disparador</li>
-                            <li>🎯 Hasta cualquier punto del modelo objetivo</li>
-                            <li>🚫 Bloqueada por terreno opaco y otras unidades</li>
-                            <li>✅ Modelos de la misma unidad no bloquean</li>
+                            <li>🎲 Tira 1D6 por cada ataque</li>
+                            <li>📊 Compara con <strong>Habilidad de Proyectiles (HP)</strong></li>
+                            <li>✅ Éxito si el resultado ≥ HP del atacante</li>
+                            <li>⭐ <strong>6 natural = Impacto Crítico</strong> (siempre acierta)</li>
+                            <li>❌ <strong>1 natural = Fallo automático</strong></li>
                         </ul>
                     </div>
-                    <div class="terrain-type">
-                        <h3>🛡️ COBERTURA</h3>
-                        <div class="cover-types">
-                            <div class="cover-rule">
-                                <h4>Cobertura Ligera</h4>
-                                <p><strong>Efecto:</strong> +1 a salvación</p>
-                                <p><strong>Fuente:</strong> Terreno de área, ruinas menores</p>
-                            </div>
-                            <div class="cover-rule">
-                                <h4>Cobertura Pesada</h4>
-                                <p><strong>Efecto:</strong> +2 a salvación</p>
-                                <p><strong>Fuente:</strong> Bunkers, fortificaciones</p>
-                            </div>
-                        </div>
-                        <p><strong>⚠️ Importante:</strong> Cobertura no se aplica contra ataques cuerpo a cuerpo</p>
+                    <div class="process-step">
+                        <h3>2️⃣ ATAQUES DE COMBATE</h3>
+                        <ul>
+                            <li>🎲 Tira 1D6 por cada ataque</li>
+                            <li>⚔️ Compara con <strong>Habilidad de Armas (HA)</strong></li>
+                            <li>✅ Éxito si el resultado ≥ HA del atacante</li>
+                            <li>⭐ <strong>6 natural = Impacto Crítico</strong> (siempre acierta)</li>
+                            <li>❌ <strong>1 natural = Fallo automático</strong></li>
+                        </ul>
                     </div>
-                    <div class="terrain-type">
-                        <h3>🌲 TIPOS DE TERRENO</h3>
-                        <div class="terrain-grid">
-                            <div class="terrain-card">
-                                <h4>🏚️ Ruinas</h4>
-                                <p>Cobertura ligera, movimiento normal</p>
-                            </div>
-                            <div class="terrain-card">
-                                <h4>🌳 Bosque Denso</h4>
-                                <p>Bloquea línea de visión, movimiento difícil</p>
-                            </div>
-                            <div class="terrain-card">
-                                <h4>🏔️ Terreno Impassable</h4>
-                                <p>No se puede mover a través</p>
-                            </div>
-                            <div class="terrain-card">
-                                <h4>💧 Terreno Difícil</h4>
-                                <p>-2" al movimiento</p>
-                            </div>
-                        </div>
+                    <div class="modifier-limits">
+                        <h3>⚖️ LÍMITES DE MODIFICADORES</h3>
+                        <p><strong>🚫 Importante:</strong> Los modificadores nunca pueden ser mayores a <strong>+1</strong> o menores a <strong>-1</strong></p>
                     </div>
                 </div>
             </div>
 
             <div class="content-section">
-                <h2>😱 REGLAS DE ACOBARDAMIENTO</h2>
-                <div class="battleshock-rules">
-                    <div class="battleshock-trigger">
-                        <h3>🎲 CUÁNDO REALIZAR TEST</h3>
-                        <ul>
-                            <li>📉 Al inicio de tu fase de comando</li>
-                            <li>💀 Si la unidad está por debajo de la Fuerza inicial</li>
-                            <li>⚠️ Si la unidad perdió modelos en el turno anterior</li>
-                        </ul>
-                    </div>
-                    <div class="battleshock-process">
-                        <h3>⚡ CÓMO REALIZAR EL TEST</h3>
+                <h2>⚔️ FASE DE COMBATE CUERPO A CUERPO</h2>
+                <div class="combat-phase">
+                    <div class="combat-overview">
+                        <h3>📋 RESUMEN DE LA FASE</h3>
+                        <p>La Fase de Combate se divide en <strong>2 pasos</strong> donde los jugadores se alternan eligiendo unidades elegibles:</p>
                         <ol>
-                            <li>🎲 Tira 2D6</li>
-                            <li>➕ Suma el Liderazgo (Ld) de la unidad</li>
-                            <li>📊 Compara con el número de modelos perdidos</li>
-                            <li>❌ Si fallas: la unidad sufre Acobardamiento</li>
+                            <li><strong>🏃 Combatir Primero:</strong> Unidades con habilidad "Combatir Primero" y unidades que cargaron</li>
+                            <li><strong>⚔️ Combates Restantes:</strong> Todas las demás unidades elegibles</li>
                         </ol>
                     </div>
-                    <div class="battleshock-effects">
-                        <h3>💥 EFECTOS DEL ACOBARDAMIENTO</h3>
-                        <div class="effect-list">
-                            <div class="effect">
-                                <h4>🚫 Restricciones</h4>
+                    
+                    <div class="combat-eligibility">
+                        <h3>✅ UNIDADES ELEGIBLES PARA COMBATIR</h3>
+                        <p>Una unidad puede ser elegida para combatir si cumple <strong>cualquiera</strong> de estas condiciones:</p>
+                        <ul>
+                            <li>🎯 Hay alguna unidad enemiga en su <strong>zona de amenaza</strong></li>
+                            <li>🏃 Realizó un <strong>movimiento de carga</strong> en este turno</li>
+                        </ul>
+                        <p><strong>⚠️ Importante:</strong> Cada unidad solo puede combatir <strong>una vez</strong> por fase</p>
+                    </div>
+
+                    <div class="combat-sequence">
+                        <h3>🔄 SECUENCIA DE COMBATE</h3>
+                        <div class="combat-steps">
+                            <div class="combat-step">
+                                <h4>1️⃣ AGRUPARSE</h4>
                                 <ul>
-                                    <li>No puede usar Estratagemas</li>
-                                    <li>No puede realizar acciones</li>
-                                    <li>-1 a todas las tiradas de ataque</li>
+                                    <li>📏 Mueve hasta <strong>3"</strong> cada miniatura</li>
+                                    <li>🎯 Debe terminar <strong>más cerca</strong> del enemigo más cercano</li>
+                                    <li>🤝 En <strong>contacto peana con peana</strong> si es posible</li>
+                                    <li>🔗 Mantener <strong>coherencia de unidad</strong></li>
                                 </ul>
                             </div>
-                            <div class="effect">
-                                <h4>🔄 Recuperación</h4>
-                                <p>Se recupera automáticamente al inicio del siguiente turno</p>
+                            <div class="combat-step">
+                                <h4>2️⃣ ATACAR EN COMBATE</h4>
+                                <ul>
+                                    <li>⚔️ Solo combaten miniaturas en <strong>zona de amenaza</strong> enemiga</li>
+                                    <li>🔗 O en contacto con aliado que esté en contacto con enemigo</li>
+                                    <li>🎲 Usar <strong>Habilidad de Armas (HA)</strong> para tiradas para impactar</li>
+                                    <li>🎯 Elegir blancos antes de resolver ataques</li>
+                                </ul>
+                            </div>
+                            <div class="combat-step">
+                                <h4>3️⃣ CONSOLIDAR</h4>
+                                <ul>
+                                    <li>📏 Mueve hasta <strong>3"</strong> cada miniatura</li>
+                                    <li>🎯 Hacia el enemigo más cercano si es posible</li>
+                                    <li>🏴 Hacia objetivo más cercano si no hay enemigos</li>
+                                    <li>🔗 Mantener <strong>coherencia de unidad</strong></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="battleshock-example">
-                        <h3>📝 EJEMPLO</h3>
-                        <p><strong>Situación:</strong> Escuadra de Marines (Ld 7) perdió 3 modelos</p>
-                        <p><strong>Test:</strong> 2D6 + 7 vs 3</p>
-                        <p><strong>Resultado:</strong> Si sacas 6 o menos en total, sufres Acobardamiento</p>
+
+                    <div class="combat-targeting">
+                        <h3>🎯 ELEGIR BLANCOS EN COMBATE</h3>
+                        <div class="targeting-rules">
+                            <div class="targeting-rule">
+                                <h4>✅ Blancos Válidos</h4>
+                                <ul>
+                                    <li>🎯 Unidad enemiga en <strong>zona de amenaza</strong> del atacante</li>
+                                    <li>🔗 Unidad enemiga en contacto con aliado que esté en contacto con el atacante</li>
+                                </ul>
+                            </div>
+                            <div class="targeting-rule">
+                                <h4>📋 Resolución de Ataques</h4>
+                                <ul>
+                                    <li>🎯 Resolver todos los ataques contra <strong>un blanco</strong> antes del siguiente</li>
+                                    <li>⚔️ Resolver ataques con el <strong>mismo perfil</strong> juntos</li>
+                                    <li>🎲 Seguir la secuencia normal: <strong>Impactar → Herir → Salvación → Daño</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="combat-example">
+                        <h3>📝 EJEMPLO DE COMBATE</h3>
+                        <div class="example-scenario">
+                            <p><strong>Situación:</strong> Escuadra de Marines Espaciales (HA 3+) ataca a Termagantes</p>
+                            <ol>
+                                <li>🏃 <strong>Agruparse:</strong> Marines se mueven 3" hacia los Termagantes</li>
+                                <li>⚔️ <strong>Atacar:</strong> Cada Marine tira 1D6, necesita 3+ para impactar</li>
+                                <li>💥 <strong>Herir:</strong> Compara Fuerza vs Resistencia</li>
+                                <li>🛡️ <strong>Salvación:</strong> Termagantes tiran su salvación</li>
+                                <li>🔄 <strong>Consolidar:</strong> Marines se mueven 3" hacia siguiente enemigo</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="content-section">
-                <h2>🚀 MARINES ESPACIALES</h2>
+                <h2>🦂 TIRÁNIDOS - ENJAMBRE VARDENGHAST</h2>
                 <div class="faction-content">
-                    <h3>Señor de la Guerra: Capitán Octavio</h3>
-                    <div class="abilities">
-                        <div class="ability">
-                            <strong>Mejora A:</strong> Resistencia mejorada
-                        </div>
-                        <div class="ability">
-                            <strong>Mejora B:</strong> Apoyo táctico
+                    <div class="faction-overview">
+                        <h3>👑 Señor de la Guerra: Terror de Vardenghast</h3>
+                        <p><strong>🧬 Descripción:</strong> Tiránido Primus Alado con poderío físico y sináptico, dotado de velocidad y maniobrabilidad aterradora gracias a sus enormes alas coriáceas.</p>
+                        
+                        <div class="warlord-stats">
+                            <div class="stat-block">
+                                <h4>📊 Estadísticas</h4>
+                                <ul>
+                                    <li><strong>M:</strong> 12" | <strong>R:</strong> 5 | <strong>S:</strong> 4+ | <strong>H:</strong> 6 | <strong>L:</strong> 7+ | <strong>CO:</strong> 1</li>
+                                    <li><strong>Arma:</strong> Garras Primus (6A, 2+, F6, FP-1, D2)</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <h4>Estilo de Juego:</h4>
-                    <ul>
-                        <li>✅ Versatilidad y resistencia</li>
-                        <li>✅ Potencia de fuego equilibrada</li>
-                        <li>✅ Control de objetivos</li>
-                    </ul>
+
+                    <div class="enhancements-section">
+                        <h3>⚡ MEJORAS DEL SEÑOR DE LA GUERRA</h3>
+                        <div class="enhancements-grid">
+                            <div class="enhancement">
+                                <h4>🛡️ VELO PSICOESTÁTICO (Por Defecto)</h4>
+                                <div class="enhancement-details">
+                                    <p><strong>🧠 Efecto:</strong> Neurosimbiontes emiten psicoestática nauseabunda</p>
+                                    <ul>
+                                        <li>✅ <strong>Agente Solitario</strong></li>
+                                        <li>🛡️ <strong>Salvación Invulnerable 4+</strong></li>
+                                        <li>⚔️ <strong>-1 para impactar</strong> en ataques de combate contra el portador</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="enhancement">
+                                <h4>🧪 SECRECIÓN SÚBITA (Opcional)</h4>
+                                <div class="enhancement-details">
+                                    <p><strong>💀 Efecto:</strong> Oleada de secreciones hiperácidas</p>
+                                    <ul>
+                                        <li>🎯 <strong>Una vez por turno</strong></li>
+                                        <li>📏 <strong>Alcance:</strong> Unidades Tiránidos amigas a 6"</li>
+                                        <li>⚡ <strong>Beneficio:</strong> +1 al atributo Perforar de las armas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faction-abilities">
+                        <h3>🧬 HABILIDADES DE FACCIÓN</h3>
+                        <div class="abilities-grid">
+                            <div class="ability">
+                                <h4>🔗 SINAPSIS</h4>
+                                <div class="ability-description">
+                                    <p><strong>📡 Efecto:</strong> Conductos de la voluntad de la Mente Colmena</p>
+                                    <ul>
+                                        <li>📏 <strong>Alcance:</strong> 6" de miniaturas Sinapsis</li>
+                                        <li>🎲 <strong>Beneficio:</strong> Chequeos de acobardamiento con <strong>3D6</strong> en lugar de 2D6</li>
+                                        <li>🧠 <strong>Función:</strong> Anula instintos naturales del enjambre</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ability">
+                                <h4>🌑 SOMBRA EN LA DISFORMIDAD</h4>
+                                <div class="ability-description">
+                                    <p><strong>👻 Efecto:</strong> Firma psíquica que roe las mentes enemigas</p>
+                                    <ul>
+                                        <li>⚡ <strong>Uso:</strong> Una vez por batalla</li>
+                                        <li>⏰ <strong>Cuándo:</strong> Fase de mando de cualquier jugador</li>
+                                        <li>💥 <strong>Efecto:</strong> Todas las unidades enemigas hacen chequeo de acobardamiento</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stratagems-section">
+                        <h3>🎯 ESTRATAGEMAS DEL ENJAMBRE VARDENGHAST</h3>
+                        <div class="stratagems-grid">
+                            <div class="stratagem">
+                                <h4>⚡ HIPERREACTIVO</h4>
+                                <div class="stratagem-details">
+                                    <p><strong>💰 Coste:</strong> 1PM | <strong>🏷️ Tipo:</strong> Táctica de Batalla</p>
+                                    <p><strong>⏰ Cuándo:</strong> Fase de disparo o combate, después de que enemigo elija blanco</p>
+                                    <p><strong>🎯 Blanco:</strong> 1 unidad Infantería Tiránidos elegida como blanco</p>
+                                    <p><strong>💥 Efecto:</strong> -1 para impactar contra tu unidad hasta el final de la fase</p>
+                                </div>
+                            </div>
+                            <div class="stratagem">
+                                <h4>🍽️ ASALTO VORAZ</h4>
+                                <div class="stratagem-details">
+                                    <p><strong>💰 Coste:</strong> 1PM | <strong>🏷️ Tipo:</strong> Táctica de Batalla</p>
+                                    <p><strong>⏰ Cuándo:</strong> Fase de disparo o combate</p>
+                                    <p><strong>🎯 Blanco:</strong> 1 unidad Tiránidos que no haya disparado/combatido</p>
+                                    <p><strong>💥 Efecto:</strong> Repetir tiradas para impactar contra el blanco más cercano</p>
+                                </div>
+                            </div>
+                            <div class="stratagem">
+                                <h4>🔄 Y MÁS, Y MUCHOS MÁS...</h4>
+                                <div class="stratagem-details">
+                                    <p><strong>💰 Coste:</strong> 1PM | <strong>🏷️ Tipo:</strong> Ardid Estratégico</p>
+                                    <p><strong>⏰ Cuándo:</strong> Paso de refuerzos de tu fase de movimiento</p>
+                                    <p><strong>🎯 Blanco:</strong> 1 unidad Termagantes (incluso si fue eliminada)</p>
+                                    <div class="stratagem-effects">
+                                        <p><strong>💥 Efectos:</strong></p>
+                                        <ul>
+                                            <li>🔄 <strong>Si no eliminada:</strong> Devuelve hasta 1D6 miniaturas</li>
+                                            <li>🆕 <strong>Si eliminada:</strong> Nueva unidad de 2D6 miniaturas en reservas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="secondary-objectives">
+                        <h3>🏆 OBJETIVOS SECUNDARIOS</h3>
+                        <div class="objectives-grid">
+                            <div class="objective">
+                                <h4>👑 XENOMORFO ALFA (Por Defecto)</h4>
+                                <div class="objective-details">
+                                    <p><strong>🎯 Condición:</strong> Tu Terror de Vardenghast elimina miniaturas enemigas</p>
+                                    <p><strong>⏰ Cuándo:</strong> Al final de cada fase</p>
+                                    <p><strong>🏆 Recompensa:</strong> <strong>4 Puntos de Victoria</strong> por fase</p>
+                                    <p><strong>📝 Descripción:</strong> Organismo vinculado al poder de la Mente Colmena</p>
+                                </div>
+                            </div>
+                            <div class="objective">
+                                <h4>🌊 MAREA QUITINOSA (Opcional)</h4>
+                                <div class="objective-details">
+                                    <p><strong>🎯 Condición:</strong> Controlar objetivos cerca de la zona enemiga</p>
+                                    <p><strong>⏰ Cuándo:</strong> Al final de tu turno</p>
+                                    <p><strong>🏆 Recompensa:</strong> <strong>5 Puntos de Victoria</strong> por turno</p>
+                                    <p><strong>📏 Requisito:</strong> Objetivos a 6" o menos de zona de despliegue enemiga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="unit-highlights">
+                        <h3>🦂 UNIDADES DESTACADAS</h3>
+                        <div class="units-grid">
+                            <div class="unit-card">
+                                <h4>🧠 PSICÓFAGO</h4>
+                                <ul>
+                                    <li>💀 <strong>Especialidad:</strong> Devorador de psíquicos</li>
+                                    <li>⚡ <strong>Habilidad:</strong> Frenesí Alimenticio</li>
+                                    <li>🎯 <strong>Arma:</strong> Ráfaga Psicoclástica</li>
+                                </ul>
+                            </div>
+                            <div class="unit-card">
+                                <h4>🏃 SALTADORES DE VON RYAN</h4>
+                                <ul>
+                                    <li>🥷 <strong>Especialidad:</strong> Cazadores sigilosos</li>
+                                    <li>⚡ <strong>Habilidades:</strong> Combatir Primero, Infiltradores, Sigilo</li>
+                                    <li>🛡️ <strong>Defensa:</strong> Salvación Invulnerable 6+</li>
+                                </ul>
+                            </div>
+                            <div class="unit-card">
+                                <h4>🎯 ESPINOGANTES</h4>
+                                <ul>
+                                    <li>💥 <strong>Especialidad:</strong> Armas vivientes</li>
+                                    <li>⚡ <strong>Habilidad:</strong> Bombardeo Trastocador</li>
+                                    <li>🎯 <strong>Efecto:</strong> -2 Movimiento al enemigo</li>
+                                </ul>
+                            </div>
+                            <div class="unit-card">
+                                <h4>🦂 TERMAGANTES</h4>
+                                <ul>
+                                    <li>🌊 <strong>Especialidad:</strong> Horda depredadora</li>
+                                    <li>⚡ <strong>Habilidad:</strong> Horrores Merodeadores</li>
+                                    <li>🔄 <strong>Especial:</strong> Pueden dividirse en dos escuadras</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="playstyle-guide">
+                        <h3>🎮 ESTILO DE JUEGO</h3>
+                        <div class="playstyle-content">
+                            <div class="strengths">
+                                <h4>✅ FORTALEZAS</h4>
+                                <ul>
+                                    <li>🌊 <strong>Números abrumadores:</strong> Múltiples unidades de enjambre</li>
+                                    <li>⚡ <strong>Velocidad:</strong> Unidades rápidas y móviles</li>
+                                    <li>🧠 <strong>Control psíquico:</strong> Sombra en la Disformidad</li>
+                                    <li>🔄 <strong>Regeneración:</strong> Estratagema "Y más, y muchos más..."</li>
+                                </ul>
+                            </div>
+                            <div class="tactics">
+                                <h4>🎯 TÁCTICAS CLAVE</h4>
+                                <ul>
+                                    <li>🏃 <strong>Presión temprana:</strong> Infiltradores y unidades rápidas</li>
+                                    <li>🎯 <strong>Control de objetivos:</strong> Marea Quitinosa</li>
+                                    <li>🛡️ <strong>Supervivencia:</strong> Hiperreactivo para defensa</li>
+                                    <li>👑 <strong>Eliminaciones:</strong> Terror de Vardenghast para PV</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="content-section">
-                <h2>🦂 TIRÁNIDOS</h2>
-                <div class="faction-content">
-                    <h3>Señor de la Guerra: Terror de Vardenghast</h3>
-                    <div class="abilities">
-                        <div class="ability">
-                            <strong>Velo Psicoestático:</strong> Salvación invulnerable 4+
+                <h2>🚀 PATRULLAS DE COMBATE</h2>
+                <div class="patrol-links">
+                    <div class="patrol-card">
+                        <a href="warhammer40k-combat-patrol-tyranids.html" class="patrol-link">
+                            <div class="patrol-header">
+                                <h3>🦂 TIRÁNIDOS</h3>
+                                <span class="patrol-subtitle">Enjambre Vardenghast</span>
+                            </div>
+                            <div class="patrol-preview">
+                                <p>🧠 <strong>Señor de la Guerra:</strong> Terror de Vardenghast</p>
+                                <p>⚡ <strong>Especialidad:</strong> Enjambre abrumador y control psíquico</p>
+                                <p>🎯 <strong>Estratagemas:</strong> 3 únicas del enjambre</p>
+                                <p>🏆 <strong>Objetivos:</strong> Xenomorfo Alfa y Marea Quitinosa</p>
+                            </div>
+                            <div class="patrol-cta">
+                                <span>Ver Detalles Completos →</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="patrol-card coming-soon">
+                        <div class="patrol-header">
+                            <h3>⚔️ SPACE MARINES</h3>
+                            <span class="patrol-subtitle">Próximamente</span>
                         </div>
-                        <div class="ability">
-                            <strong>Aguijón Secretor:</strong> +Penetración de armadura
+                        <div class="patrol-preview">
+                            <p>🛡️ Defensores de la humanidad</p>
+                            <p>⚡ Tácticas versátiles y resistencia</p>
                         </div>
                     </div>
-                    <h4>Reglas Especiales:</h4>
-                    <ul>
-                        <li>🧠 Sombra en la Disformidad</li>
-                        <li>🔗 Sinapsis</li>
-                        <li>🏃 Velocidad de enjambre</li>
-                    </ul>
+                    
+                    <div class="patrol-card coming-soon">
+                        <div class="patrol-header">
+                            <h3>🔥 OTRAS PATRULLAS</h3>
+                            <span class="patrol-subtitle">En desarrollo</span>
+                        </div>
+                        <div class="patrol-preview">
+                            <p>🎯 Más facciones próximamente</p>
+                            <p>📚 Guías detalladas en preparación</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
