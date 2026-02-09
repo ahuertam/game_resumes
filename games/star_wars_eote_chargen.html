@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de Personajes - Star Wars: Al Filo del Imperio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="game-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .step-card {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .step-number {
+            display: inline-block;
+            background: #ffd700;
+            color: #000;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .species-grid, .career-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .option-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        .option-card:hover {
+            border-color: #ffd700;
+            background: rgba(255, 215, 0, 0.1);
+        }
+        .stat-block {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <a href="star_wars_eote.html" class="back-btn">← VOLVER A REGLAS</a>
+            <h1 class="game-title" style="font-family: 'Orbitron', sans-serif;">CREACIÓN DE PERSONAJES</h1>
+        </header>
+
+        <main class="game-content">
+            <div class="step-card">
+                <h2><span class="step-number">1</span> Determinar Concepto y Obligación</h2>
+                <p>Elige el trasfondo de tu personaje. ¿Por qué está al margen de la ley? ¿Qué deuda tiene?</p>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>La Obligación</h3>
+                        <p>Todos empiezan con una Obligación (Deuda, Crimen, Favor, etc.). Puedes asumir más Obligación inicial (+5 o +10) para obtener XP extra o Créditos iniciales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <h2><span class="step-number">2</span> Elegir Especie</h2>
+                <p>La especie determina tus características base y XP inicial.</p>
+                <div class="species-grid">
+                    <div class="option-card">
+                        <h3>Humano</h3>
+                        <p>Versátiles. 2 en todas las características.</p>
+                        <p>XP Inicial: 110</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Bothan</h3>
+                        <p>Espías natos. Astucia alta.</p>
+                        <p>XP Inicial: 100</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Wookiee</h3>
+                        <p>Fuertes y resistentes. Empiezan con 3 en Fortaleza.</p>
+                        <p>XP Inicial: 90</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Twi'lek</h3>
+                        <p>Carismáticos. Presencia alta.</p>
+                        <p>XP Inicial: 100</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Rodiano</h3>
+                        <p>Ágiles cazadores. Destreza alta.</p>
+                        <p>XP Inicial: 100</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Droide</h3>
+                        <p>Personalizables. 1 en todo, pero mucha XP.</p>
+                        <p>XP Inicial: 175</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Gand</h3>
+                        <p>Misteriosos y resistentes.</p>
+                        <p>XP Inicial: 100</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Trandoshano</h3>
+                        <p>Fuerza bruta y regeneración.</p>
+                        <p>XP Inicial: 90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <h2><span class="step-number">3</span> Elegir Profesión</h2>
+                <p>Define tus habilidades profesionales y talentos iniciales.</p>
+                <div class="career-grid">
+                    <div class="option-card">
+                        <h3>Cazarrecompensas</h3>
+                        <p>Supervivencia, Rastreo, Combate</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Colono</h3>
+                        <p>Medicina, Negociación, Conocimiento</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Explorador</h3>
+                        <p>Navegación, Astrografía, Frontera</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Mercenario</h3>
+                        <p>Armas pesadas, Demoliciones, Mando</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Contrabandista</h3>
+                        <p>Engaño, Pilotaje, Bajos Fondos</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Técnico</h3>
+                        <p>Mecánica, Informática, Reparación</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <h2><span class="step-number">4</span> Invertir Experiencia</h2>
+                <p>Usa tu XP inicial para:</p>
+                <ul>
+                    <li><strong>Mejorar Características:</strong> Solo se puede hacer AHORA. Cuesta: Nuevo Valor x 10.</li>
+                    <li><strong>Mejorar Habilidades:</strong> Cuesta: Nuevo Rango x 5 (si es de profesión) o x 5 + 5 (si no lo es).</li>
+                    <li><strong>Adquirir Talentos:</strong> Del árbol de tu especialización.</li>
+                </ul>
+            </div>
+
+            <div class="step-card">
+                <h2><span class="step-number">5</span> Equipo Inicial</h2>
+                <p>Empiezas con 500 créditos (o más si tomaste Obligación extra) para comprar armas, armaduras y equipo básico.</p>
+            </div>
+
+            <div class="step-card">
+                <h2><span class="step-number">6</span> Motivación</h2>
+                <p>Elige qué impulsa a tu personaje (Ambición, Causa, Relación). Esto ayuda al GM a crear ganchos de historia para ti.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

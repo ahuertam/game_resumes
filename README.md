@@ -75,7 +75,7 @@ Una colección de resúmenes de reglas de juegos de mesa, rol y wargames con un 
 - Simplemente abre index.html en tu navegador web
 - O usa un servidor local:
 ```
-python -m http.server 8000
+python3 -m http.server 8000
 # Luego visita http://localhost:800
 ```
 ## 🤝 Contribuir

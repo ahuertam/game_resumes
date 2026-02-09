@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de Personaje - Rolemaster Fantasy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rm-red: #8b0000;
+            --rm-gold: #ffd700;
+            --rm-text: #e0e0e0;
+        }
+        
+        body {
+            background-color: #0f0f0f;
+            color: var(--rm-text);
+            font-family: 'MedievalSharp', cursive;
+        }
+
+        .header-container {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://placeholder-url-for-bg.jpg'); /* Placeholder */
+            background-color: #2a0a0a;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--rm-gold);
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--rm-gold);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .step-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .step-card {
+            background: #1a1a1a;
+            border: 1px solid #444;
+            border-left: 5px solid var(--rm-red);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+            position: relative;
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            background: var(--rm-gold);
+            color: #000;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-family: 'Cinzel', serif;
+            font-size: 1.2em;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        h2 {
+            color: var(--rm-gold);
+            margin-top: 0;
+            font-family: 'Cinzel', serif;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .stat-box {
+            background: #000;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #333;
+            border-radius: 4px;
+        }
+
+        .stat-abbr {
+            color: var(--rm-red);
+            font-weight: bold;
+            display: block;
+            font-size: 1.2em;
+        }
+
+        .note {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 10px;
+            border-left: 3px solid var(--rm-gold);
+            margin-top: 10px;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        ul {
+            line-height: 1.6;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 40px 0;
+            color: var(--rm-gold);
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+            font-size: 1.2em;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>CREACIÓN DE HÉROES</h1>
+        <p>Forjando tu leyenda en Rolemaster</p>
+    </div>
+
+    <div class="step-container">
+        
+        <div class="step-card">
+            <div class="step-number">1</div>
+            <h2>Concepto y Raza</h2>
+            <p>Antes de tirar dados, decide qué quieres jugar. La raza determina tus bonificadores a las características y resistencias.</p>
+            <ul>
+                <li><strong>Hombres Comunes:</strong> Versátiles y adaptables.</li>
+                <li><strong>Elfos (Altos, Grises, Silvanos):</strong> Inmortales, ágiles y mágicos, pero frágiles.</li>
+                <li><strong>Enanos:</strong> Resistentes, fuertes y tercos. Gran resistencia a la magia.</li>
+                <li><strong>Medianos (Halflings):</strong> Pequeños, sigilosos y con una suerte increíble.</li>
+                <li><strong>Orcos y Trolls:</strong> Fuertes y brutales, pero odiados por muchos.</li>
+            </ul>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">2</div>
+            <h2>Características (Stats)</h2>
+            <p>Rolemaster tiene 10 características. Tira 1d100 para cada una (o usa el método de asignación de puntos de tu GM). Valores de 90+ son excepcionales.</p>
+            <div class="stat-grid">
+                <div class="stat-box"><span class="stat-abbr">Co</span> Constitución</div>
+                <div class="stat-box"><span class="stat-abbr">Ag</span> Agilidad</div>
+                <div class="stat-box"><span class="stat-abbr">Au</span> Autodisciplina</div>
+                <div class="stat-box"><span class="stat-abbr">Me</span> Memoria</div>
+                <div class="stat-box"><span class="stat-abbr">Ra</span> Razón</div>
+                <div class="stat-box"><span class="stat-abbr">Fu</span> Fuerza</div>
+                <div class="stat-box"><span class="stat-abbr">Ra</span> Rapidez</div>
+                <div class="stat-box"><span class="stat-abbr">Pr</span> Presencia</div>
+                <div class="stat-box"><span class="stat-abbr">Em</span> Empatía</div>
+                <div class="stat-box"><span class="stat-abbr">In</span> Intuición</div>
+            </div>
+            <div class="note">
+                Tus bonificadores dependen de estos valores (ej. 95-97 da +10, 100 da +25).
+            </div>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">3</div>
+            <h2>La Profesión</h2>
+            <p>Tu profesión no dicta qué puedes hacer, sino <strong>cuánto te cuesta aprenderlo</strong>. Cada habilidad tiene un coste en Puntos de Desarrollo (PD).</p>
+            <ul>
+                <li><strong>Armas (Luchador, Ladrón...):</strong> Barato aprender armas y maniobras. Caro aprender hechizos.</li>
+                <li><strong>Magia (Mago, Clérigo...):</strong> Barato aprender hechizos y runas. Caro aprender armas.</li>
+                <li><strong>Semi-Mágicos (Paladín, Montaraz...):</strong> Equilibrio entre armas y magia.</li>
+            </ul>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">4</div>
+            <h2>Desarrollo de Habilidades</h2>
+            <p>Tienes una cantidad de <strong>Puntos de Desarrollo (PD)</strong> basada en tus características (normalmente entre 30 y 50 por nivel).</p>
+            <p>Gastas PD para comprar <strong>Rangos</strong> en habilidades. Los primeros rangos dan más bonificador:</p>
+            <ul>
+                <li>Rangos 1-10: +5% por rango</li>
+                <li>Rangos 11-20: +2% por rango</li>
+                <li>Rangos 21+: +1% por rango</li>
+            </ul>
+            <p><strong>Bono Total de Habilidad =</strong> Bonificador de Característica + (Rangos x Bono) + Objetos + Especiales.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">5</div>
+            <h2>Equipo y Toques Finales</h2>
+            <p>Compra tu equipo inicial con el oro de tu trasfondo.</p>
+            <ul>
+                <li>Calcula tu <strong>Bono Defensivo (BD)</strong>: Rapidez + Escudo + Magia.</li>
+                <li>Calcula tus <strong>Puntos de Golpe</strong>: Basados en Constitución y rangos en Desarrollo Físico.</li>
+                <li>Calcula tus <strong>Puntos de Poder</strong> (si usas magia): Basados en tu característica clave.</li>
+            </ul>
+        </div>
+
+        <a href="rolemaster_fantasy.html" class="back-link">← Volver a Reglas de Rolemaster</a>
+    </div>
+
+</body>
+</html>

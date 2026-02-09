@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolemaster Fantasy - Game Resumes</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rm-red: #8b0000;
+            --rm-gold: #ffd700;
+            --rm-dark: #1a1a1a;
+            --rm-text: #e0e0e0;
+        }
+        
+        body {
+            background-color: #0f0f0f;
+            color: var(--rm-text);
+            font-family: 'MedievalSharp', cursive;
+        }
+
+        .game-header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid var(--rm-red);
+            background: linear-gradient(to bottom, #000, #2a0a0a);
+        }
+
+        .game-title {
+            font-family: 'Cinzel', serif;
+            color: var(--rm-gold);
+            text-shadow: 2px 2px 4px #000;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--rm-gold);
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+            border: 1px solid var(--rm-gold);
+            padding: 5px 15px;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--rm-red);
+            border-color: var(--rm-red);
+            color: white;
+        }
+
+        .content-section {
+            background: rgba(20, 20, 20, 0.9);
+            border: 1px solid var(--rm-red);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 4px;
+            box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            color: var(--rm-gold);
+            border-bottom: 1px solid var(--rm-red);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #ff6b6b;
+        }
+
+        .mechanic-box {
+            background: rgba(0, 0, 0, 0.4);
+            border-left: 4px solid var(--rm-gold);
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .dice-example {
+            font-family: monospace;
+            background: #000;
+            padding: 10px;
+            border-radius: 4px;
+            color: #4ade80;
+        }
+
+        .critical-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: sans-serif;
+            font-size: 0.9em;
+        }
+
+        .critical-table th, .critical-table td {
+            padding: 10px;
+            border: 1px solid #444;
+            text-align: left;
+        }
+
+        .critical-table th {
+            background: var(--rm-red);
+            color: white;
+        }
+
+        .chargen-link {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            background: var(--rm-red);
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+            font-size: 1.5em;
+            border: 2px solid var(--rm-gold);
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+
+        .chargen-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+            background: #a00000;
+        }
+
+        .realm-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .realm-card {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border: 1px solid #444;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <a href="../index.html" class="back-btn">← VOLVER AL COMPENDIO</a>
+            <h1 class="game-title">ROLEMASTER FANTASY</h1>
+            <p style="color: #aaa; margin-top: 10px;">El sistema definitivo de realismo y detalle</p>
+        </header>
+
+        <main class="game-content">
+            <div class="content-section">
+                <h2>📜 INTRODUCCIÓN</h2>
+                <p>Rolemaster es conocido por su detallismo, realismo y letalidad. A diferencia de otros juegos donde los puntos de golpe son lo único que importa, en Rolemaster un solo golpe crítico bien colocado puede acabar con el héroe más veterano. Es un juego de táctica, gestión de riesgos y "Tablas para todo".</p>
+                
+                <a href="rolemaster_fantasy_chargen.html" class="chargen-link">
+                    ⚔️ GUÍA DE CREACIÓN DE PERSONAJES
+                    <div style="font-size: 0.6em; margin-top: 5px;">Razas, Profesiones y Habilidades</div>
+                </a>
+            </div>
+
+            <div class="content-section">
+                <h2>🎲 MECÁNICA CENTRAL: D100</h2>
+                <p>Casi todas las tiradas en Rolemaster utilizan dos dados de 10 caras para generar un número entre 1 y 100 (percentil).</p>
+                
+                <div class="mechanic-box">
+                    <h3>🔄 Tiradas Abiertas (Open-Ended)</h3>
+                    <p>La característica más famosa del sistema. Permite resultados teóricamente infinitos:</p>
+                    <ul>
+                        <li><strong>Hacia Arriba (96-100):</strong> Si sacas entre 96 y 100, tiras de nuevo y SUMAS el resultado. Si vuelves a sacar 96+, sigues sumando.</li>
+                        <li><strong>Hacia Abajo (01-05):</strong> Si sacas entre 01 y 05, tiras de nuevo y RESTAS el resultado. Si la segunda tirada es 96+, sigues restando (¡pifia!).</li>
+                    </ul>
+                    <div class="dice-example">
+                        Ejemplo: Tiras 98. Tiras de nuevo y sale 45. Total = 143.<br>
+                        Ejemplo: Tiras 03. Tiras de nuevo y sale 80. Total = 03 - 80 = -77.
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>⚔️ COMBATE Y TABLAS</h2>
+                <p>El combate no usa CA (Clase de Armadura) tradicional. Se basa en:</p>
+                <div class="mechanic-box">
+                    <p style="font-size: 1.2em; text-align: center;"><strong>Tirada de Ataque = 1d100 (Abierta) + BO (Bono Ofensivo) - BD (Bono Defensivo)</strong></p>
+                </div>
+                <p>El resultado se consulta en la tabla del arma específica contra el tipo de armadura (AT 1 a AT 20). El resultado suele ser un número de puntos de vida y un <strong>Crítico</strong>.</p>
+
+                <h3>💥 Los Críticos</h3>
+                <p>Aquí es donde Rolemaster brilla. Los críticos van de la 'A' (leve) a la 'E' (letal). Describen heridas específicas:</p>
+                <table class="critical-table">
+                    <tr>
+                        <th>Gravedad</th>
+                        <th>Ejemplo de Efecto</th>
+                    </tr>
+                    <tr>
+                        <td>A (Leve)</td>
+                        <td>"Golpe en el brazo. +3 PV, -5 a la actividad 1 asalto."</td>
+                    </tr>
+                    <tr>
+                        <td>C (Serio)</td>
+                        <td>"Corte en el muslo. +10 PV, aturdido 2 asaltos, sangra 2/asaltos."</td>
+                    </tr>
+                    <tr>
+                        <td>E (Mortal)</td>
+                        <td>"Golpe a través del ojo. El cerebro es destruido. Muerte instantánea."</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="content-section">
+                <h2>✨ LOS REINOS DE PODER (MAGIA)</h2>
+                <p>La magia se divide en tres reinos distintos, cada uno con sus propias reglas y profesiones:</p>
+                
+                <div class="realm-grid">
+                    <div class="realm-card">
+                        <h3 style="color: #60a5fa;">La Esencia</h3>
+                        <p>Manipulación de la energía bruta del universo. Hechizos elementales, ilusiones y alteraciones físicas.</p>
+                        <p><strong>Profesiones:</strong> Mago, Ilusionista, Alquimista.</p>
+                    </div>
+                    <div class="realm-card">
+                        <h3 style="color: #facc15;">La Canalización</h3>
+                        <p>Poder otorgado por los dioses. Curación, protección y milagros divinos.</p>
+                        <p><strong>Profesiones:</strong> Clérigo, Animista, Sanador.</p>
+                    </div>
+                    <div class="realm-card">
+                        <h3 style="color: #a855f7;">El Mentalismo</h3>
+                        <p>Poder de la mente y el espíritu personal. Telepatía, control mental y automejora.</p>
+                        <p><strong>Profesiones:</strong> Mentalista, Vidente, Monje.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

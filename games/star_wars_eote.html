@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars: Al Filo del Imperio - Game Resumes</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="game-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .dice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .dice-table th, .dice-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .dice-table th {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffd700;
+        }
+        .dice-icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        .symbol-icon {
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .dice-green { color: #4ade80; }
+        .dice-yellow { color: #facc15; }
+        .dice-blue { color: #60a5fa; }
+        .dice-purple { color: #a855f7; }
+        .dice-red { color: #ef4444; }
+        .dice-black { color: #94a3b8; }
+        .dice-white { color: #fff; }
+        
+        .chargen-link {
+            display: inline-block;
+            background: #ffd700;
+            color: #000;
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: transform 0.2s;
+        }
+        .chargen-link:hover {
+            transform: scale(1.05);
+            background: #ffe44d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <a href="../index.html" class="back-btn">← VOLVER</a>
+            <h1 class="game-title" style="font-family: 'Orbitron', sans-serif;">STAR WARS: AL FILO DEL IMPERIO</h1>
+        </header>
+
+        <main class="game-content">
+            <div class="content-section">
+                <h2>🌌 INTRODUCCIÓN</h2>
+                <p>En las sombras de Coruscant o en los remotos mundos del Borde Exterior, contrabandistas, cazarrecompensas y colonos luchan por sobrevivir bajo el yugo del Imperio Galáctico. Aquí la moralidad es gris y un disparo de bláster suele ser la mejor negociación.</p>
+                <div style="text-align: center;">
+                    <a href="star_wars_eote_chargen.html" class="chargen-link">🚀 GUÍA DE CREACIÓN DE PERSONAJES</a>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🎲 EL SISTEMA DE DADOS NARRATIVOS</h2>
+                <p>El juego utiliza dados especiales con símbolos que determinan no solo el éxito o fracaso, sino también efectos secundarios narrativos.</p>
+                
+                <h3>Dados Positivos (Reserva de Dados)</h3>
+                <table class="dice-table">
+                    <tr>
+                        <th>Dado</th>
+                        <th>Nombre</th>
+                        <th>Uso</th>
+                    </tr>
+                    <tr>
+                        <td><span class="dice-icon dice-green">⬠</span> Verde</td>
+                        <td>Aptitud (d8)</td>
+                        <td>Representa la característica base o habilidad entrenada.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="dice-icon dice-yellow">⬡</span> Amarillo</td>
+                        <td>Pericia (d12)</td>
+                        <td>Representa entrenamiento superior. Reemplaza a los dados verdes.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="dice-icon dice-blue">□</span> Azul</td>
+                        <td>Defensa/Beneficio (d6)</td>
+                        <td>Bonificaciones circunstanciales (ayuda, equipo, terreno favorable).</td>
+                    </tr>
+                </table>
+
+                <h3>Dados Negativos (Dificultad)</h3>
+                <table class="dice-table">
+                    <tr>
+                        <th>Dado</th>
+                        <th>Nombre</th>
+                        <th>Uso</th>
+                    </tr>
+                    <tr>
+                        <td><span class="dice-icon dice-purple">⬠</span> Morado</td>
+                        <td>Dificultad (d8)</td>
+                        <td>Dificultad base de la tarea.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="dice-icon dice-red">⬡</span> Rojo</td>
+                        <td>Desafío (d12)</td>
+                        <td>Peligro extremo o adversarios de élite. Reemplaza morados.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="dice-icon dice-black">■</span> Negro</td>
+                        <td>Complicación (d6)</td>
+                        <td>Penalizadores circunstanciales (oscuridad, lluvia, cobertura).</td>
+                    </tr>
+                </table>
+
+                <h3>Dado de la Fuerza</h3>
+                <table class="dice-table">
+                    <tr>
+                        <th>Dado</th>
+                        <th>Nombre</th>
+                        <th>Uso</th>
+                    </tr>
+                    <tr>
+                        <td><span class="dice-icon dice-white">⬡</span> Blanco</td>
+                        <td>Fuerza (d12)</td>
+                        <td>Genera puntos de Fuerza (Luminoso/Oscuro) y puntos de Destino.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="content-section">
+                <h2>📊 SÍMBOLOS Y RESULTADOS</h2>
+                <table class="dice-table">
+                    <tr>
+                        <th>Símbolo</th>
+                        <th>Nombre</th>
+                        <th>Efecto</th>
+                        <th>Contrarrestado por</th>
+                    </tr>
+                    <tr>
+                        <td>💥</td>
+                        <td>Éxito</td>
+                        <td>Determina si la acción se realiza. Se necesita al menos 1 neto.</td>
+                        <td>Fallo (▼)</td>
+                    </tr>
+                    <tr>
+                        <td>🏔️</td>
+                        <td>Ventaja</td>
+                        <td>Efecto positivo secundario (recuperar tensión, activar crítico).</td>
+                        <td>Amenaza (⚠️)</td>
+                    </tr>
+                    <tr>
+                        <td>🌟</td>
+                        <td>Triunfo</td>
+                        <td>Cuenta como Éxito + efecto muy potente. Solo en dado Amarillo.</td>
+                        <td>No se cancela</td>
+                    </tr>
+                    <tr>
+                        <td>▼</td>
+                        <td>Fallo</td>
+                        <td>Anula un Éxito. Si hay más Fallos que Éxitos, la acción falla.</td>
+                        <td>Éxito (💥)</td>
+                    </tr>
+                    <tr>
+                        <td>⚠️</td>
+                        <td>Amenaza</td>
+                        <td>Efecto negativo secundario (fatiga, problemas de equipo).</td>
+                        <td>Ventaja (🏔️)</td>
+                    </tr>
+                    <tr>
+                        <td>☠️</td>
+                        <td>Desesperación</td>
+                        <td>Cuenta como Fallo + efecto catastrófico. Solo en dado Rojo.</td>
+                        <td>No se cancela</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="content-section">
+                <h2>📜 REGLAS BÁSICAS</h2>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>Reserva de Dados</h3>
+                        <p>Toma el valor más alto entre Característica y Habilidad. Esa es tu cantidad de dados Verdes. Luego, mejora tantos dados a Amarillos como el valor más bajo.</p>
+                        <p><em>Ejemplo: Agilidad 3, Pilotar 2 = 1 Verde, 2 Amarillos.</em></p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>Interpretación</h3>
+                        <p><strong>Éxito con Amenaza:</strong> Logras disparar al guardia, pero tu arma se encasquilla.</p>
+                        <p><strong>Fallo con Ventaja:</strong> No abres la cerradura, pero descubres que no tiene trampa.</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>Destino</h3>
+                        <p>Al inicio de la sesión, se tira 1 dado de Fuerza por jugador. Los puntos Luminosos son para los jugadores, los Oscuros para el GM. Se pueden gastar para mejorar dados o activar efectos.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

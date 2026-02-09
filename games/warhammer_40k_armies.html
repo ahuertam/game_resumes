@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejércitos Warhammer 40k - Game Resumes</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="game-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        .faction-section {
+            margin-bottom: 40px;
+        }
+        .faction-header {
+            font-family: 'Russo One', sans-serif;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .imperium { background: linear-gradient(90deg, #1e3a8a, transparent); color: #fff; }
+        .chaos { background: linear-gradient(90deg, #7f1d1d, transparent); color: #fff; }
+        .xenos { background: linear-gradient(90deg, #14532d, transparent); color: #fff; }
+        
+        .army-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .army-title {
+            color: #facc15;
+            font-family: 'Russo One', sans-serif;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .army-tips {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+            border-left: 3px solid #facc15;
+        }
+        .list-header {
+            font-weight: bold;
+            color: #94a3b8;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <a href="warhammer_40k_10th.html" class="back-btn">← REGLAS</a>
+            <h1 class="game-title" style="font-family: 'Russo One', sans-serif;">EJÉRCITOS Y LISTAS INICIALES (1000 PTS)</h1>
+        </header>
+
+        <main class="game-content">
+            <p>Guía rápida para elegir tu facción y construir una fuerza de Incursión (1000 puntos) equilibrada para aprender a jugar.</p>
+
+            <!-- IMPERIUM -->
+            <div class="faction-section">
+                <h2 class="faction-header imperium">🛡️ IMPERIUM (El Imperio del Hombre)</h2>
+                
+                <div class="army-card">
+                    <h3 class="army-title">Space Marines (Adeptus Astartes)</h3>
+                    <p>Superhumanos genéticamente modificados en servoarmadura. Versátiles, resistentes y fáciles de aprender.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts (Ejemplo "Gladius Task Force")</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Captain in Terminator Armour (Warlord).</li>
+                            <li><strong>Línea:</strong> 1x Intercessor Squad (5) para asegurar objetivos traseros.</li>
+                            <li><strong>Línea:</strong> 1x Assault Intercessor Squad (10) para ir al frente con el Capitán.</li>
+                            <li><strong>Élite:</strong> 1x Terminator Squad (5) para despliegue rápido y resistencia.</li>
+                            <li><strong>Vehículo:</strong> 1x Redemptor Dreadnought (fuego de apoyo pesado y melé).</li>
+                            <li><strong>Apoyo:</strong> 1x Hellblaster Squad (5) para eliminar blindados.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Astra Militarum (Guardia Imperial)</h3>
+                    <p>Soldados humanos ordinarios y tanques masivos. Ganan por número y potencia de fuego.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Cadian Command Squad (Warlord) + Lord Solar Leontus (¡muy bueno!).</li>
+                            <li><strong>Línea:</strong> 2x Cadian Shock Troops (20 miniaturas en total) para "Sticky Objectives".</li>
+                            <li><strong>Vehículo:</strong> 1x Leman Russ Battle Tank (Demolisher o Battle Cannon).</li>
+                            <li><strong>Vehículo:</strong> 1x Rogal Dorn Battle Tank (pieza central resistente).</li>
+                            <li><strong>Artillería:</strong> 1x Field Ordnance Battery o Basilisk.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Adeptus Custodes</h3>
+                    <p>La guardia personal del Emperador. Pocas miniaturas, extremadamente élite y duras de matar.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Blade Champion (excelente duelista).</li>
+                            <li><strong>Línea:</strong> 1x Custodian Guard Squad (4-5) con lanzas/escudos.</li>
+                            <li><strong>Élite:</strong> 1x Allarus Custodians (2-3) exterminadores para objetivos clave.</li>
+                            <li><strong>Élite:</strong> 1x Wardens (3-4) guardaespaldas para el personaje.</li>
+                            <li><em>Nota: A 1000 puntos tendrás muy pocas unidades, ¡cuídalas!</em></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Adepta Sororitas (Sisters of Battle)</h3>
+                    <p>Monjas guerreras con fe inquebrantable. Utilizan "Dados de Milagro" para alterar el destino y lanzallamas sagrados.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Canoness o Palatine.</li>
+                            <li><strong>Línea:</strong> 1x Battle Sisters Squad (generan dados de milagro).</li>
+                            <li><strong>Élite:</strong> 1x Celestian Sacresants (guardaespaldas) o Arco-flagellants.</li>
+                            <li><strong>Apoyo:</strong> 1x Retributor Squad (con Multi-meltas para antitanque).</li>
+                            <li><strong>Transporte:</strong> 1x Sororitas Rhino (taxi blindado).</li>
+                            <li><strong>Walker:</strong> Paragon Warsuits o Penitent Engines (melé brutal).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Adeptus Mechanicus</h3>
+                    <p>Sacerdotes tecnológicos de Marte. Combina disparos precisos con auras de radiación que debilitan al enemigo.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Tech-Priest Manipulus (mejora armas).</li>
+                            <li><strong>Línea:</strong> 2x Skitarii Vanguard (reducen OC enemigo por radiación).</li>
+                            <li><strong>Élite:</strong> Kataphron Breachers (la unidad más fuerte del codex, disparan muchísimo).</li>
+                            <li><strong>Rápido:</strong> Pteraxii Sterylizors (lanzallamas voladores) o Serberys Raiders.</li>
+                            <li><strong>Pesado:</strong> Onager Dunecrawler (tanque araña resistente).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Grey Knights</h3>
+                    <p>Cazadores de demonios psíquicos. Todos teleportan y son élite. Muy móviles.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Brotherhood Librarian (hace daño mortal psíquico).</li>
+                            <li><strong>Línea:</strong> 1x Strike Squad (aseguran objetivos y "teleportan" fuera).</li>
+                            <li><strong>Línea:</strong> 1x Brotherhood Terminator Squad (reviven 1 modelo por turno).</li>
+                            <li><strong>Pesado:</strong> 1x Nemesis Dreadknight (imprescindible: martillo y psilencer/psicannon).</li>
+                            <li><em>Estrategia:</em> Usa "Teleport Assault" para reposicionarte cada turno.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Imperial Knights</h3>
+                    <p>Nobles pilotos en máquinas de guerra colosales. Pocas miniaturas, resistencia extrema y potencia de fuego devastadora.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> 1x Knight Questoris (Paladin, Errant o Canis Rex). Es tu Warlord y pieza central.</li>
+                            <li><strong>Línea:</strong> 2-3x Armiger Warglaives (Melé y fusión antitanque).</li>
+                            <li><strong>Línea:</strong> 1-2x Armiger Helverins (Cañones automáticos para barrer infantería).</li>
+                            <li><em>Nota:</em> A 1000 puntos solo tendrás 3 o 4 miniaturas en total. ¡Cada baja duele!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Imperial Agents (Inquisition & Assassins)</h3>
+                    <p>La Inquisición, Asesinos y agentes especiales. Pueden jugarse solos o como aliados de otros ejércitos imperiales.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Inquisitor Greyfax o Lord Inquisitor Kyria Draxus.</li>
+                            <li><strong>Personaje:</strong> Vindicare Assassin (Francotirador letal) o Eversor Assassin.</li>
+                            <li><strong>Línea:</strong> 2x Imperial Navy Breachers (infantería de élite de abordaje).</li>
+                            <li><strong>Línea:</strong> 1x Arbites Exaction Squad.</li>
+                            <li><strong>Transporte:</strong> Imperial Rhino o Chimera.</li>
+                            <li><strong>Retinue:</strong> Inquisitorial Henchmen para acompañar al Inquisidor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHAOS -->
+            <div class="faction-section">
+                <h2 class="faction-header chaos">🔥 CHAOS (Los Poderes Ruinosos)</h2>
+                
+                <div class="army-card">
+                    <h3 class="army-title">Chaos Space Marines</h3>
+                    <p>Veteranos de la Larga Guerra, pactos demoníacos y odio puro. Agresivos y flexibles.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Chaos Lord o Daemon Prince.</li>
+                            <li><strong>Línea:</strong> 2x Legionaries (5) o Cultist Mob (para objetivos baratos).</li>
+                            <li><strong>Élite:</strong> 1x Chaos Terminators (5) o Possessed (5) (muy fuertes en melé).</li>
+                            <li><strong>Vehículo:</strong> 1x Venomcrawler o Forgefiend (disparo demoníaco).</li>
+                            <li><strong>Transporte:</strong> Chaos Rhino para mover a los Legionarios.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Death Guard</h3>
+                    <p>Marines de plaga de Nurgle. Lentos pero increíblemente resistentes. Reducen la resistencia enemiga.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Typhus (lidera Poxwalkers) + Biologus Putrifier.</li>
+                            <li><strong>Línea:</strong> 2x Plague Marines (7-10) con armas especiales.</li>
+                            <li><strong>Línea:</strong> 20x Poxwalkers (horda zombi escudo humano).</li>
+                            <li><strong>Vehículo:</strong> 1x Plagueburst Crawler (artillería indirecta obligatoria).</li>
+                            <li><strong>Vehículo:</strong> 1x Myphitic Blight-hauler (antitanque rápido).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">World Eaters</h3>
+                    <p>Seguidores de Khorne. Solo melé. Cargas rápidas y ultraviolencia. "Sangre para el Dios de la Sangre".</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Master of Executions (con mejora "Berzerker Glaive") o Khârn the Betrayer.</li>
+                            <li><strong>Línea:</strong> 2x Khorne Berzerkers (10) (el núcleo del ejército).</li>
+                            <li><strong>Línea:</strong> Jakhals (cultistas dopados para controlar objetivos traseros).</li>
+                            <li><strong>Élite:</strong> Eightbound o Exalted Eightbound (monstruos de combate).</li>
+                            <li><strong>Transporte:</strong> Chaos Rhino (obligatorio para que los Berzerkers lleguen vivos).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Thousand Sons</h3>
+                    <p>Hechiceros de Tzeentch. Marines autómata (Rubric) y mucha magia. Ignoran armaduras.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Infernal Master (genera puntos de Cábala) + Ahriman (potencia lanzallamas).</li>
+                            <li><strong>Línea:</strong> 2x Rubric Marines (con Warpvomers/Lanzallamas).</li>
+                            <li><strong>Élite:</strong> Scarab Occult Terminators (disparo y aguante).</li>
+                            <li><strong>Monstruo:</strong> Mutalith Vortex Beast (buffs, daño mortal y antitanque).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Chaos Daemons</h3>
+                    <p>Manifestaciones del Warp. Tienen salvación invulnerable contra todo y despliegan cerca del enemigo.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Great Unclean One (tanque inmensa) o Be'lakor (si cabe en puntos, difícil a 1000).</li>
+                            <li><strong>Alternativa HQ:</strong> Heralds (Skullmaster, Fluxmaster) para liderar tropas.</li>
+                            <li><strong>Línea:</strong> Pink Horrors (disparan y se dividen al morir) o Plaguebearers (aguantan objetivos).</li>
+                            <li><strong>Élite:</strong> Flamers of Tzeentch (disparo automático potente).</li>
+                            <li><strong>Élite:</strong> Bloodcrushers (caballería de Khorne que carga durísimo).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Chaos Knights</h3>
+                    <p>Caballeros caídos y corrompidos. Terroríficos motores de guerra con pinchos y demonios en su interior.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> 1x Knight Abominant (Poderes psíquicos y resistencia) o Desecrator.</li>
+                            <li><strong>Línea:</strong> 2x War Dog Brigands (Los mejores disparando, muy letales).</li>
+                            <li><strong>Línea:</strong> 1-2x War Dog Karnivores (Melé puro y muy rápidos).</li>
+                            <li><strong>Estrategia:</strong> Usa "Dread Test" para acobardar al enemigo y ganar bonos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- XENOS -->
+            <div class="faction-section" id="xenos">
+                <h2 class="faction-header xenos">👽 XENOS (La Amenaza Alienígena)</h2>
+                
+                <div class="army-card">
+                    <h3 class="army-title">Necrons</h3>
+                    <p>Androides inmortales que se autorreparan. Gran disparo a medio alcance.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Overlord con Orbe de Resurrección.</li>
+                            <li><strong>Línea:</strong> 1x Necron Warriors (20) o Immortals (10). ¡Pon al Overlord aquí!</li>
+                            <li><strong>Élite:</strong> 1x Skorpekh Destroyers (3) para contracarga.</li>
+                            <li><strong>Pesado:</strong> 1x Lokhust Heavy Destroyer (antitanque) o Canoptek Doomstalker.</li>
+                            <li><strong>Rápido:</strong> Canoptek Scarab Swarms (para molestar y ocupar zonas).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Tyranids</h3>
+                    <p>El Gran Devorador. Enjambres infinitos y monstruos biológicos gigantes.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts (Invasion Fleet)</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Hive Tyrant (a pie o con alas) o Broodlord.</li>
+                            <li><strong>Línea:</strong> 20x Termagants (control de tablero).</li>
+                            <li><strong>Élite:</strong> 1x Genestealers (5-10) o Zoanthropes (3) (necesarios para sinapsis y antitanque psíquico).</li>
+                            <li><strong>Monstruo:</strong> 1x Carnifex o Screamer-Killer (ariete de combate).</li>
+                            <li><strong>Infiltración:</strong> Von Ryan's Leapers o Lictor.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">T'au Empire</h3>
+                    <p>Tecnología avanzada y potencia de fuego a larga distancia. Nulos en combate cuerpo a cuerpo.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Commander in Crisis Battlesuit (Coldstar).</li>
+                            <li><strong>Línea:</strong> 1x Breacher Team + Devilfish (Transporte) para tomar objetivos.</li>
+                            <li><strong>Élite:</strong> 1x Crisis Battlesuits (3) (unidad clave de disparo).</li>
+                            <li><strong>Pesado:</strong> 1x Broadside Battlesuit o Hammerhead Gunship (antitanque).</li>
+                            <li><strong>Auxiliar:</strong> Stealth Battlesuits (para guiar disparos).</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                 <div class="army-card">
+                    <h3 class="army-title">Orks</h3>
+                    <p>¡WAAAGH! Hordas brutales, vehículos destartalados y diversión caótica. Melé abrumador.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Warboss in Mega Armour o Beastboss.</li>
+                            <li><strong>Línea:</strong> 2x Boyz (10-20) (la columna vertebral).</li>
+                            <li><strong>Transporte:</strong> Trukk (imprescindible para llevar a los Boyz).</li>
+                            <li><strong>Élite:</strong> Nobz (pegan muy duro) o Meganobz.</li>
+                            <li><strong>Rápido:</strong> Deffkoptas o Squighog Boyz.</li>
+                            <li><strong>Pesado:</strong> Deff Dread (lata asesina).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Aeldari (Eldar)</h3>
+                    <p>Antiguos y ágiles. Usan "Dados de Destino" para garantizar resultados. Cristal de cañón: pegan mucho, mueren rápido.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Farseer (manipula el destino) + Autarch Wayleaper (genera CP).</li>
+                            <li><strong>Línea:</strong> Guardian Defenders (generan dados de destino).</li>
+                            <li><strong>Élite:</strong> Wraithguard (muy resistentes y letales) + Spiritseer (para revivirlos).</li>
+                            <li><strong>Rápido:</strong> Windriders (motos a reacción) o Warp Spiders.</li>
+                            <li><strong>Pesado:</strong> War Walker o Fire Prism (disparo a larga distancia).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Drukhari (Dark Eldar)</h3>
+                    <p>Piratas sádicos. Velocidad extrema y fragilidad. Ganan poder matando ("Power from Pain").</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts (Skysplinter Assault)</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Archon (líder de la Cábala).</li>
+                            <li><strong>Línea:</strong> Kabalite Warriors (disparo envenenado).</li>
+                            <li><strong>Transporte:</strong> Raider y Venom (IMPRESCINDIBLES: todo el ejército va montado).</li>
+                            <li><strong>Élite:</strong> Incubi (guardaespaldas del Archon, picadoras de carne).</li>
+                            <li><strong>Rápido:</strong> Scourges (con Dark Lances para antitanque: disparan y se esconden).</li>
+                            <li><strong>Monstruo:</strong> Talos o Cronos (algo de aguante).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Leagues of Votann</h3>
+                    <p>Enanos espaciales tecnológicos. Resistentes y rencorosos. Ponen "Tokens de Juicio" para mejorar sus ataques.</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Kâhl (líder básico) o Einhyr Champion.</li>
+                            <li><strong>Línea:</strong> Hearthkyn Warriors (10).</li>
+                            <li><strong>Élite:</strong> Einhyr Hearthguard (Terminators enanos con granadas de plasma, MVP del ejército).</li>
+                            <li><strong>Transporte:</strong> Sagitaur (vehículo de asalto rápido).</li>
+                            <li><strong>Rápido:</strong> Hernkyn Pioneers (motos gravitatorias exploradoras).</li>
+                            <li><strong>Pesado:</strong> Hekaton Land Fortress (tanque principal, si te caben los puntos).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="army-card">
+                    <h3 class="army-title">Genestealer Cults</h3>
+                    <p>Rebeldes infiltrados que adoran a los Tiránidos. Emboscadas, explosivos y reaparición infinita (Cult Ambush).</p>
+                    <div class="army-tips">
+                        <div class="list-header">Lista Inicial 1000 Pts</div>
+                        <ul>
+                            <li><strong>HQ:</strong> Primus (mejora despliegue) + Patriarch (melé fuerte).</li>
+                            <li><strong>Línea:</strong> 2x Neophyte Hybrids (20) (con armas pesadas sísmicas/láser).</li>
+                            <li><strong>Élite:</strong> Acolyte Hybrids (con bombas de demolición, borran cualquier cosa).</li>
+                            <li><strong>Élite:</strong> Aberrants (mutantes resistentes con martillos).</li>
+                            <li><strong>Rápido:</strong> Atalan Jackals (motos para molestar y misiones).</li>
+                            <li><em>Nota:</em> Ejército difícil de jugar (fragilidad extrema), requiere mucha escenografía.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="main-footer">
+            <p>Hecho con ❤️ para la comunidad gamer - Última actualización: <span id="last-update"></span></p>
+            <script>document.getElementById('last-update').textContent = new Date().toLocaleTimeString();</script>
+        </footer>
+    </div>
+</body>
+</html>
