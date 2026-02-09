@@ -76,7 +76,7 @@ Una colección de resúmenes de reglas de juegos de mesa, rol y wargames con un 
 - O usa un servidor local:
 ```
 python3 -m http.server 8000
-# Luego visita http://localhost:800
+# Luego visita http://localhost:8000
 ```
 ## 🤝 Contribuir
 ¿Quieres agregar un nuevo juego o mejorar los resúmenes existentes?
